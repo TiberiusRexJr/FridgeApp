@@ -1,5 +1,5 @@
 using System;
-namespace InterfacePractice
+namespace FridgeApp
 {
     /* class of common functions to give user information about items in thier fridge */
 

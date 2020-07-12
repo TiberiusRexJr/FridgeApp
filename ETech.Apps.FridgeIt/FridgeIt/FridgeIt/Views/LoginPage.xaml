@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="FridgeIt.Views.Login">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <ControlTemplate x:Key="Header">
+                <StackLayout>
+                    <Image Source="" x:Name="ImageHeader"></Image>
+
+                </StackLayout>
+            </ControlTemplate>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    
+    <ContentPage.Content>
+        <!--control template header-->
+        <StackLayout>
+            
+            <!--control template header-->
+            <Label x:Name="LabelUserName" Text="User Name: "></Label>
+            <Entry x:Name="EntryUserName" Keyboard="Text"  Text="{Binding}" Placeholder="Username"></Entry>
+            <Label x:Name="LabelPassword" Text="Password: "></Label>
+            <Entry x:Name="Password" Keyboard="Text" Text="{Binding}" Placeholder="Password" ></Entry>
+            <Button Text="Log In" Command="{Binding }"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

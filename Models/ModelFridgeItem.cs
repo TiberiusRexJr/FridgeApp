@@ -14,7 +14,7 @@ namespace FridgeApp
         public string category{get;set;}
         public Color expirationStatus= Color.FromName("Green");
         //functions;
-        public List<ModelFridgeItem> IsExpiredDummy()
+        public List<ModelFridgeItem> updateExpirationStatus()
         {
             //class databasePROPERTY
             DateTime days=(expirationDate-placementDate).Days;

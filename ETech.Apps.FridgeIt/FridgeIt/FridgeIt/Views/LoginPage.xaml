@@ -12,6 +12,10 @@
         <Label x:Name="LabelPassword" Text="Password"></Label>
         <Entry x:Name="EntryUserPassword" Placeholder="Password" Keyboard="Text" Text="{Binding Password,Mode=OneWayToSource}"></Entry>
         <Button x:Name="ButtonLogin" Text="Submit" Command="{Binding }"></Button>
+        
+        <Label x:Name="LabelRegister" Text="Sign Up"  >
+            
+        </Label>
     </StackLayout>
 
 

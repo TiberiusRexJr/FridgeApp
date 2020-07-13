@@ -17,6 +17,22 @@ namespace FridgeIt.Views
         {
             InitializeComponent();
             BindingContext = new LoginPageViewModel();
+            IntializeLabelRegister();
+
+
         }
+
+        private void IntializeLabelRegister()
+        {
+            var tapGesture = new TapGestureRecognizer();
+            tapGesture.NumberOfTapsRequired = 1;
+            tapGesture.Tapped += (s, e) =>
+            {
+                App.Current.MainPage = new RegisterPage();
+            };
+            LabelRegister.GestureRecognizers.Add(tapGesture);
+        }
+
+
     }
 }

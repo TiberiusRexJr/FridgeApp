@@ -9,7 +9,7 @@
              ControlTemplate="{StaticResource TemplateHeaderFooter}">
     <ContentPage.Content>
         <StackLayout>
-            <Label FontSize="Title" Text="Register" x:Name="" LabelTitle></Label>
+            <Label FontSize="Title" Text="Register" x:Name="LabelTitle"></Label>
             <Entry x:Name="EntryFirstname" Text="{Binding firstname}" Placeholder="Firstname" Keyboard="Text"></Entry>
             <Entry x:Name="EntryLastname" Text="{Binding lastname}" Placeholder="Lastname" Keyboard="Text"></Entry>
             <Entry x:Name="EntryEmail" Text="{Binding email}" Placeholder="Email" Keyboard="Email"></Entry>

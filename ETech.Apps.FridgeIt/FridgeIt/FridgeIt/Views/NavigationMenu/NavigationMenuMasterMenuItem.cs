@@ -9,13 +9,14 @@ namespace FridgeIt.Views
 
     public class NavigationMenuMasterMenuItem
     {
-        public NavigationMenuMasterMenuItem()
-        {
-            TargetType = typeof(NavigationMenuMasterMenuItem);
-        }
         public int Id { get; set; }
         public string Title { get; set; }
 
         public Type TargetType { get; set; }
+        public NavigationMenuMasterMenuItem()
+        {
+            TargetType = typeof(NavigationMenuMasterMenuItem);
+        }
+       
     }
 }

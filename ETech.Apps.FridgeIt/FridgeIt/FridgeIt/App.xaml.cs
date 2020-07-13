@@ -14,7 +14,7 @@ namespace FridgeIt
             InitializeComponent();
 
             /*DependencyService.Register<MockDataStore>();*/
-            MainPage = new LoginPage();
+            MainPage = new NavigationMenu();
         }
 
         protected override void OnStart()

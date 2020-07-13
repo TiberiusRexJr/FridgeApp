@@ -4,28 +4,15 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="FridgeIt.Views.Login">
-    <ContentPage.Resources>
-        <ResourceDictionary>
-            <ControlTemplate x:Key="Header">
-                <StackLayout>
-                    <Image Source="" x:Name="ImageHeader"></Image>
+             x:Class="FridgeIt.Views.LoginPage"
+             ControlTemplate="{StaticResource TemplateHeaderFooter}">
+    <StackLayout>
+        <Label x:Name="LabelUsername" Text="Username"></Label>
+        <Entry x:Name="EntryUsername" Placeholder="Username" Keyboard="Text" Text="{Binding Username,Mode=OneWayToSource}"></Entry>
+        <Label x:Name="LabelPassword" Text="Password"></Label>
+        <Entry x:Name="EntryUserPassword" Placeholder="Password" Keyboard="Text" Text="{Binding Password,Mode=OneWayToSource}"></Entry>
+        <Button x:Name="ButtonLogin" Text="Submit" Command="{Binding }"></Button>
+    </StackLayout>
 
-                </StackLayout>
-            </ControlTemplate>
-        </ResourceDictionary>
-    </ContentPage.Resources>
-    
-    <ContentPage.Content>
-        <!--control template header-->
-        <StackLayout>
-            
-            <!--control template header-->
-            <Label x:Name="LabelUserName" Text="User Name: "></Label>
-            <Entry x:Name="EntryUserName" Keyboard="Text"  Text="{Binding}" Placeholder="Username"></Entry>
-            <Label x:Name="LabelPassword" Text="Password: "></Label>
-            <Entry x:Name="Password" Keyboard="Text" Text="{Binding}" Placeholder="Password" ></Entry>
-            <Button Text="Log In" Command="{Binding }"></Button>
-        </StackLayout>
-    </ContentPage.Content>
+
 </ContentPage>

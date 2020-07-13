@@ -1,7 +1,7 @@
 ﻿using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-using FridgeIt.Services;
+/*using FridgeIt.Services;*/
 using FridgeIt.Views;
 
 namespace FridgeIt
@@ -13,8 +13,8 @@ namespace FridgeIt
         {
             InitializeComponent();
 
-            DependencyService.Register<MockDataStore>();
-            MainPage = new MainPage();
+            /*DependencyService.Register<MockDataStore>();*/
+            MainPage = new LoginPage();
         }
 
         protected override void OnStart()

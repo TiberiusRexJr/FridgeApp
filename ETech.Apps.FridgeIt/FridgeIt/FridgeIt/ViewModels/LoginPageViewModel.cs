@@ -10,7 +10,7 @@ namespace FridgeIt.ViewModels
 {
     public class LoginPageViewModel : ContentView, INotifyPropertyChanged
     {
-        public Command ButtonLoginClicked;
+        public Command ButtonLoginCommand;
         public string username;
         public string password;
         
@@ -21,6 +21,15 @@ namespace FridgeIt.ViewModels
             set
             {
                 username = value;
+                //propertychanged
+            }
+        }
+        public string Password
+        {
+            get => password;
+            set
+            {
+                password = value;
                 //propertychanged
             }
         }

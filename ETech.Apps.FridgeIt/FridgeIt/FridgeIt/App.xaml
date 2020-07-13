@@ -14,6 +14,16 @@
                 <Setter Property="BarBackgroundColor" Value="{StaticResource NavigationPrimary}" />
                 <Setter Property="BarTextColor" Value="White" />
             </Style>
+            <ControlTemplate x:Key="TemplateHeaderFooter">
+                <StackLayout>
+                    <Label BackgroundColor="DeepSkyBlue" Text="Header" VerticalOptions="Start"></Label>
+                    <ContentPresenter VerticalOptions="FillAndExpand"></ContentPresenter>
+                    <Label BackgroundColor="DeepSkyBlue" Text="Footer" VerticalOptions="End"></Label>
+                    <!--<Image BackgroundColor="DeepSkyBlue" Source="Resources/iconfridge.png" VerticalOptions="Start"/>-->
+                    
+                </StackLayout>
+            </ControlTemplate>
+            
         </ResourceDictionary>
     </Application.Resources>
     

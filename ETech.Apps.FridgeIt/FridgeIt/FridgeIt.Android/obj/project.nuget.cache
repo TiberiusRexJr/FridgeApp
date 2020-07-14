@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8lMw/vcu616RBIiMq4gYqvHoLB0m1xb4PwuPmT0gePepjby6KUneUGU40MOw7TwPGCQXnVMnKSoDRpJ/U7xAdw==",
+  "dgSpecHash": "Zwv1tz9fr2BTgtEGIR3ZA60SSxRuhgWxIB8c/yeFjMZmkY/3EtPFlOAp0atsihat/qm8ivU2MvvjSF6/6Nwq2g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\rouni\\Desktop\\FridgeApp\\ETech.Apps.FridgeIt\\FridgeIt\\FridgeIt.Android\\FridgeIt.Android.csproj",
+  "projectFilePath": "C:\\Users\\rouni\\Documents\\FridgeApp\\ETech.Apps.FridgeIt\\FridgeIt\\FridgeIt.Android\\FridgeIt.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\rouni\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.android.arch.core.common\\1.1.1.3\\xamarin.android.arch.core.common.1.1.1.3.nupkg.sha512",

@@ -13,7 +13,7 @@ namespace FridgeIt.Views
         public string Title { get; set; }
 
         public Type TargetType { get; set; }
-        public NavigationMenuMasterMenuItem()
+        public NavigationMenuMasterMenuItem(int id,string title,string type)
         {
             TargetType = typeof(NavigationMenuMasterMenuItem);
         }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Xamarin.Forms;
 
 namespace FridgeIt.Views
 {
@@ -13,10 +14,14 @@ namespace FridgeIt.Views
         public string Title { get; set; }
 
         public Type TargetType { get; set; }
-        public NavigationMenuMasterMenuItem(int id,string title,string type)
+        public NavigationMenuMasterMenuItem()
         {
             TargetType = typeof(NavigationMenuMasterMenuItem);
         }
-       
+        public NavigationMenuMasterMenuItem(int id,string title,ContentPage a)
+        {
+            TargetType = typeof(NavigationMenuMasterMenuItem);
+        }
+
     }
 }

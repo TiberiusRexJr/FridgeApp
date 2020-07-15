@@ -38,6 +38,12 @@ namespace FridgeIt.Views
                 case "My Fridge Trends":
                     pagetype = typeof(MyFridgeTrends);
                     break;
+                case "Log In":
+                    pagetype = typeof(LoginPage);
+                    break;
+                case "Register":
+                    pagetype = typeof(RegisterPage);
+                    break;
                 default:
                     pagetype = typeof(LoginPage);
                     break;

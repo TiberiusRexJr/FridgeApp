@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FridgeIt.Views.Pages;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,17 +21,41 @@ namespace FridgeIt.Views
 
         private void ListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
+            Type pagetype;
+
             var item = e.SelectedItem as NavigationMenuMasterMenuItem;
             if (item == null)
                 return;
+            
+            switch(item.Title)
+            {
+                case "Dashboard":
+                    pagetype = typeof(DashboardPage);
+                    break;
+                case "My Fridge Health":
+                    pagetype = typeof(MyFridgeHealth);
+                    break;
+                case "My Fridge Trends":
+                    pagetype = typeof(MyFridgeTrends);
+                    break;
+                default:
+                    pagetype = typeof(LoginPage);
+                    break;
+            }
 
-            var page = (Page)Activator.CreateInstance(item.TargetType);
+            var page = (Page)Activator.CreateInstance(pagetype);
             page.Title = item.Title;
 
             Detail = new NavigationPage(page);
             IsPresented = false;
 
             MasterPage.ListView.SelectedItem = null;
+        }
+
+        private Type PageType(NavigationMenuMasterMenuItem item)
+        {
+
+            throw new NotImplementedException();
         }
     }
 }

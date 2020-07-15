@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MjPX2CjBcHK73f5fxAu36uRPcrJEnGFOjM8FGv8DtKwZiZfScQUqUOGyOwea9S733YvdeW9dtdCYEgdUl69jng==",
+  "dgSpecHash": "Rx9koqGtRRpJfCby7W0255EXOhEnkSAhOjMXTz80QJ4ro4LKB43d+9oqITAsh5DpqxUWFlgPWEZPsgqVBp3u6g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\rouni\\Documents\\FridgeApp\\ETech.Apps.FridgeIt\\FridgeIt\\FridgeIt\\FridgeIt.csproj",
+  "projectFilePath": "C:\\Users\\rouni\\Desktop\\FridgeApp\\ETech.Apps.FridgeIt\\FridgeIt\\FridgeIt\\FridgeIt.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\rouni\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\rouni\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",

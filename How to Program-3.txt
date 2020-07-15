@@ -1,0 +1,16 @@
+How to Program-3
+
+Problems
+1.Overwhelmed, to much at once, reslults in only "GIST" being remember.
+2. GIST =some syntax, CONCEPT
+3. Devil is in the details, no details no machine.
+4. Must test yourself [code yourself the project by hand; limited auto-complete]
+5. ITS JUST a script.
+6. 
+
+SOLUTION
+1. MINDSTATE [CONCPET WHAT AM I DOING]
+2. BAKE A CAKE [SCRIPT, LINE BY LINE, A PLAY IN EACH FILE]
+3. FORCE YOURSELF TO RECREATE [TEST, LINE BY LINE, JUST THIS]
+4. CONTROL YOUR EXPECTATIONS. THIS IS THE WAY. LET SATISFACTION COME FROM MASTERY, NOT QUANTITY. I CAN DO <INSERT SKILL 
+5. VISIBILE STRUCTURE TO THE CODE, ORDER TO HELP COMMIT TO ASSOCIATIONS, FLOW

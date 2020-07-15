@@ -33,7 +33,7 @@ namespace FridgeIt.Views
             {
                 MenuItems = new ObservableCollection<NavigationMenuMasterMenuItem>(new[]
                 {
-                    new NavigationMenuMasterMenuItem { Id = 0, Title = "Dashboard" },
+                    new NavigationMenuMasterMenuItem { Id = 0, Title = "Dashboard",TargetType=DashboardPage },
                     new NavigationMenuMasterMenuItem { Id = 1, Title = "Register" },
                     new NavigationMenuMasterMenuItem { Id = 2, Title = "Login" },
                     new NavigationMenuMasterMenuItem { Id = 3, Title = "Page 4" },

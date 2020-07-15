@@ -14,14 +14,25 @@ namespace FridgeIt.Views
         public string Title { get; set; }
 
         public Type TargetType { get; set; }
+        /*public NavigationMenuMasterMenuItem()
+        {
+            TargetType = typeof(NavigationMenuMasterMenuItem);
+        }
+        public NavigationMenuMasterMenuItem(ContentPage a)
+        {
+            TargetType = a.GetType();
+        }
+        public NavigationMenuMasterMenuItem(int id,string title,Type targetType)
+        {
+            Id = Id;
+            Title = title;
+            TargetType = targetType;
+        }*/
         public NavigationMenuMasterMenuItem()
         {
-            TargetType = typeof(NavigationMenuMasterMenuItem);
+            
         }
-        public NavigationMenuMasterMenuItem(int id,string title,ContentPage a)
-        {
-            TargetType = typeof(NavigationMenuMasterMenuItem);
-        }
+
 
     }
 }

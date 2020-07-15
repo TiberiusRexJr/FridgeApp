@@ -14,7 +14,7 @@ namespace FridgeIt.Views
             Content = new StackLayout
             {
                 Children = {
-                    new Label { Text = "Welcome to Xamarin.Forms!" }
+                    new Label { Text = "Dashboard" }
                 }
             };
         }

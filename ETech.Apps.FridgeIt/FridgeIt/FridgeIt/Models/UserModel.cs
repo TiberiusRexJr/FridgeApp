@@ -8,13 +8,13 @@ namespace FridgeIt.Models
     class UserModel
     {
         [PrimaryKey,AutoIncrement]
-        int userid { get; set; }
-        string userName { get; set; }
+        public int userId { get; set; }
+        public string userName { get; set; }
         [Unique]
-        string userEmail { get; set; }
-        string userPassword { get; set; }
-        string userFirstname { get; set; }
-        string userLastname { get; set; }
+        public string userEmail { get; set; }
+        public string userPassword { get; set; }
+        public string userFirstname { get; set; }
+        public string userLastname { get; set; }
 
         public UserModel()
         {

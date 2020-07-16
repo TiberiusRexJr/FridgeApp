@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             Title="Settings"
+             x:Class="FridgeIt.Views.Pages.Settings">
+    <StackLayout>
+        <Label Text="Settigs"></Label>
+        <Picker Title="" />
+        <Slider Minimum="0" Maximum="1" />
+        <Slider Minimum="0" Maximum="1" />
+        <Switch IsToggled="false" />
+        <Slider Minimum="0" Maximum="1" />
+    
+    </StackLayout>
+    
+</ContentPage>

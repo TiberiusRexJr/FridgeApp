@@ -2,7 +2,7 @@ bundleassemblies=false
 aotassemblies=false
 androidaotmode=none
 androidembedprofilers=
-androidenableprofiledaot=
+androidenableprofiledaot=false
 androiddextool=d8
 androidlinktool=
 androidpackageformat=apk
@@ -24,5 +24,9 @@ androidgeneratejnimarshalmethods=false
 os=windows_nt
 androidincludedebugsymbols=true
 androidpackagenamingpolicy=lowercasecrc64
+<<<<<<< HEAD
 _nugetassetstimestamp=637305092955759918
+=======
+_nugetassetstimestamp=637304146557385413
+>>>>>>> ExpirimentChart
 typemapkind=strings-asm

@@ -24,12 +24,19 @@ namespace FridgeIt.Database
         }
 
 
-        public bool Validation(string username,string password)
+        public bool Validation(string userEmail,string userPassword)
         {
             /* find a USERMODEL object in DATABASE_USER table where username is==username and password==password
                 return true or false
              */
-            throw new NotImplementedException();
+
+            _databaseUser.Table<UserModel>().FirstOrDefault(u => u.userEmail == userEmail && u.userPassword == userPassword);
+            if (_databaseUser == null)
+            {
+                return false;
+            }
+            else
+                return true;
         }
         //create
         public bool Create(UserModel user)
@@ -39,9 +46,11 @@ namespace FridgeIt.Database
              */
             var idMax = _databaseUser.Table<UserModel>().OrderByDescending(u => u.userId).FirstOrDefault();
 
-            int id = (idMax == null ? 1 : idMax.userId + 1);
+            user.userId = (idMax == null ? 1 : idMax.userId + 1);
 
-            throw new NotImplementedException();
+            _databaseUser.Insert(user);
+            return true;
+
         }
         //read
         public UserModel Retrieve(string userEmail)

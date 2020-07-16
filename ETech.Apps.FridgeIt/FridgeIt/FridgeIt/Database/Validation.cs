@@ -7,7 +7,7 @@ namespace FridgeIt.Database
 {
     class Validation
     {
-        DatabaseUser db = new DatabaseUser();
+        //DatabaseUser db = new DatabaseUser();
 
 
     }

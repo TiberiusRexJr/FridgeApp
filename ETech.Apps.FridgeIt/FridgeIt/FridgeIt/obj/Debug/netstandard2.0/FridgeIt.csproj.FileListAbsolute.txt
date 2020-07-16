@@ -17,3 +17,5 @@ C:\Users\rouni\Desktop\FridgeApp\ETech.Apps.FridgeIt\FridgeIt\FridgeIt\obj\Debug
 C:\Users\rouni\Desktop\FridgeApp\ETech.Apps.FridgeIt\FridgeIt\FridgeIt\obj\Debug\netstandard2.0\ref\FridgeIt.dll
 C:\Users\rouni\Desktop\FridgeApp\ETech.Apps.FridgeIt\FridgeIt\FridgeIt\obj\Debug\netstandard2.0\FridgeIt.pdb
 C:\Users\rouni\Desktop\FridgeApp\ETech.Apps.FridgeIt\FridgeIt\FridgeIt\obj\Debug\netstandard2.0\Views\Pages\Settings.xaml.g.cs
+C:\Users\rouni\Desktop\FridgeApp\ETech.Apps.FridgeIt\FridgeIt\FridgeIt\obj\Debug\netstandard2.0\FridgeIt.csproj.CoreCompileInputs.cache
+C:\Users\rouni\Desktop\FridgeApp\ETech.Apps.FridgeIt\FridgeIt\FridgeIt\obj\Debug\netstandard2.0\XamlC.stamp

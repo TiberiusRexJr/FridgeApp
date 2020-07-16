@@ -487,3 +487,13 @@ C:\Users\rouni\Desktop\FridgeApp\ETech.Apps.FridgeIt\FridgeIt\FridgeIt.Android\o
 C:\Users\rouni\Desktop\FridgeApp\ETech.Apps.FridgeIt\FridgeIt\FridgeIt.Android\obj\Debug\90\stamp\_GenerateJavaStubs.stamp
 C:\Users\rouni\Desktop\FridgeApp\ETech.Apps.FridgeIt\FridgeIt\FridgeIt.Android\obj\Debug\90\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\rouni\Desktop\FridgeApp\ETech.Apps.FridgeIt\FridgeIt\FridgeIt.Android\obj\Debug\90\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\rouni\Desktop\FridgeApp\ETech.Apps.FridgeIt\FridgeIt\FridgeIt.Android\obj\Debug\90\android\typemaps.x86.s
+C:\Users\rouni\Desktop\FridgeApp\ETech.Apps.FridgeIt\FridgeIt\FridgeIt.Android\obj\Debug\90\android\typemaps.x86_64.s
+C:\Users\rouni\Desktop\FridgeApp\ETech.Apps.FridgeIt\FridgeIt\FridgeIt.Android\obj\Debug\90\android\environment.x86.s
+C:\Users\rouni\Desktop\FridgeApp\ETech.Apps.FridgeIt\FridgeIt\FridgeIt.Android\obj\Debug\90\android\environment.x86_64.s
+C:\Users\rouni\Desktop\FridgeApp\ETech.Apps.FridgeIt\FridgeIt\FridgeIt.Android\obj\Debug\90\android\typemaps.x86.o
+C:\Users\rouni\Desktop\FridgeApp\ETech.Apps.FridgeIt\FridgeIt\FridgeIt.Android\obj\Debug\90\android\typemaps.x86_64.o
+C:\Users\rouni\Desktop\FridgeApp\ETech.Apps.FridgeIt\FridgeIt\FridgeIt.Android\obj\Debug\90\android\environment.x86.o
+C:\Users\rouni\Desktop\FridgeApp\ETech.Apps.FridgeIt\FridgeIt\FridgeIt.Android\obj\Debug\90\android\environment.x86_64.o
+C:\Users\rouni\Desktop\FridgeApp\ETech.Apps.FridgeIt\FridgeIt\FridgeIt.Android\obj\Debug\90\app_shared_libraries\x86\libxamarin-app.so
+C:\Users\rouni\Desktop\FridgeApp\ETech.Apps.FridgeIt\FridgeIt\FridgeIt.Android\obj\Debug\90\app_shared_libraries\x86_64\libxamarin-app.so

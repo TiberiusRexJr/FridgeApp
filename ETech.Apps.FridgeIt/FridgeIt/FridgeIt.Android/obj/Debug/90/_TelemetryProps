@@ -23,6 +23,10 @@ AndroidDexTool=d8
 AndroidLinkTool=
 AndroidEnableProfiledAot=false
 AndroidInstallAfterBuild=True
+<<<<<<< HEAD
 AndroidSessionId=d36b1bb6-6625-46e8-b2f3-4088af387df4
+=======
+AndroidSessionId=4c250e93-7d27-4bb2-acaa-d552aea9b727
+>>>>>>> ExpirimentDatabase
 BuildConfiguration=Debug
 TemplateName={9AA2D3C6-3393-45F1-8E7C-5A9901728795}

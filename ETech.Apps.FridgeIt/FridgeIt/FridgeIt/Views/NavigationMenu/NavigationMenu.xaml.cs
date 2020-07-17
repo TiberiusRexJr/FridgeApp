@@ -18,16 +18,43 @@ namespace FridgeIt.Views
             InitializeComponent();
             MasterPage.ListView.ItemSelected += ListView_ItemSelected;
         }
+        public NavigationMenu(string pageTitle)
+        {
+
+            InitializeComponent();
+            MasterPage.ListView.ItemSelected += ListView_ItemSelected;
+            Page pagetype = PageSwitchBoard(pageTitle);
+            Detail = new NavigationPage(pagetype);
+        }
 
         private void ListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
-            Type pagetype;
+            Page pagetype;
 
             var item = e.SelectedItem as NavigationMenuMasterMenuItem;
             if (item == null)
                 return;
-            
-            switch(item.Title)
+
+             pagetype = PageSwitchBoard(item.Title);
+         
+
+            Detail = new NavigationPage(pagetype);
+            IsPresented = false;
+            MasterPage.ListView.SelectedItem = null;
+        }
+
+        private Type PageType(NavigationMenuMasterMenuItem item)
+        {
+
+            throw new NotImplementedException();
+        }
+        
+
+        private Page PageSwitchBoard(string pageTitle)
+        {
+            Page page = null;
+            Type pagetype = null;
+            switch (pageTitle)
             {
                 case "Dashboard":
                     pagetype = typeof(DashboardPage);
@@ -48,20 +75,9 @@ namespace FridgeIt.Views
                     pagetype = typeof(LoginPage);
                     break;
             }
-
-            var page = (Page)Activator.CreateInstance(pagetype);
-            page.Title = item.Title;
-
-            Detail = new NavigationPage(page);
-            IsPresented = false;
-
-            MasterPage.ListView.SelectedItem = null;
-        }
-
-        private Type PageType(NavigationMenuMasterMenuItem item)
-        {
-
-            throw new NotImplementedException();
+            page = (Page)Activator.CreateInstance(pagetype);
+            page.Title = pageTitle;
+            return page;
         }
     }
 }

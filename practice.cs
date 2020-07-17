@@ -1,55 +1,45 @@
-/* MenuMaster
-    sets the Listview with Menuitems
+SQLite-net-pcl
+using SQLite;
+using FridgeIt.Views;
 
-    implementes propertychanged
-
-    double class infile viewModel of Menu
-
-    implements Observalbelist of MenuItems to observe changed
- */
- using System;
- using System.Xamarin;
- using System.Xamrin.Xaml;
-namespace FridgeIt.Views
+namespace FridgeIt.Database
 {
     
-
- public partial class MenuBar:ContentPage
- {
-     ListView menuItems;
-
-     public MenuBar()
-         {
-             IntializeComponents();
-             BindingContext=MenuBarViewModel;
-             menuItems=MenuItemsListView;
-         }
-     
- }
-
- class NavigationMenuMasterViewModel:INotifyPropertyChanged
- {
-     public ObservableCollection<NavigationMenuMasterMenuItems> MenuItems{get;set;}
-
-    public NavigationMenuMasterViewModel()
+    public class DatabaseUser()
     {
-        MenuItems=new ObservableCollection<NavigationMenuMasterMenuItems>new[]
-        {
-            new MenuItem{id=new Guid(), description="Dashboard"},
-            new MenuItems{id=new Guid(), description="UserStatistics"},
-            new MenuItems{id=new Guid(), description="MyFridgehealth"},
+        private SQLiteConnection _userDatabase;
+    private string _userDatabasePath=Path.Combine(System.Enviroment.GetFolderPath(System.Enviroment.SpecialFolder.Personal),"UserDatabe.db3"));
 
-        }
-    }    
- }
- #region INotifyPropertyChanged implementation
- public event PropertyChangedEventHandler PropertyChanged;
+            public DatabaseUser()
+            {
+                _userDatabase=new SQLiteConnection(_userDatabasePath);
+                
 
- public void OnPropertyChanged([CallerMemberName] string properyName="")
- {
-     if(PropertyChanged==null)
-     return;
-     PropertyChanged.Invoke(this,new PropertyChangedEventArgs(properyName)));
- }
- #endregion
+            }
+
+            public bool Validate(string userEmail,string userPassword)
+            {
+                var dataset=_userDatabase<UserModel>.Where(u =>u.userEmail==userEmail && u.userPassword==userPassword);
+
+                if(dataset==null)
+                {
+                    return false;
+                }
+                else
+                {
+                    return true
+                }
+            }
+
+            public bool Create(UserModel user)
+            {
+                var idCount=_userDatabase.Table<UserModel>().OrderByDescending(u =>u.UserId).FirstOrDefault();
+                int id=(idCount?null:1 idCount.UserId+1);
+
+                user.userId=id;
+                _userDatabase.Insert(user);
+                
+            }
+    }
+    
 }

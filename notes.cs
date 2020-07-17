@@ -61,6 +61,10 @@ if DATA-PERSISTANCE OBJECT, SETTINGS_OBJ.KEPT_ME_LOGGED_IN==false
 
   */
 
+  /* ASYNC
+        1. Eventually make Async for REGISTER_BUTTON things like that
+   */
+
   ON_STARTUP()
   {
       DATABASE_SINGELTON

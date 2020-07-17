@@ -9,12 +9,12 @@
              ControlTemplate="{StaticResource TemplateHeaderFooter}">
     <ContentPage.Content>
         <StackLayout>
-            <Label FontSize="Title" Text="Register" x:Name="LabelTitle"></Label>
             <Entry x:Name="EntryFirstname" Text="{Binding Firstname}" Placeholder="Firstname" Keyboard="Text"></Entry>
             <Entry x:Name="EntryLastname" Text="{Binding Lastname}" Placeholder="Lastname" Keyboard="Text"></Entry>
             <Entry x:Name="EntryEmail" Text="{Binding Email}" Placeholder="Email" Keyboard="Email"></Entry>
             <Entry x:Name="EntryPassword" Text="{Binding Password}" Placeholder="password" Keyboard="Text"></Entry>
             <Button x:Name="ButtonRegister" Text="Register" Command="{Binding CommandButtonRegister}" ></Button>
+            <Label x:Name="LabelErrorResponse" Text="{Binding LabelErrorResponse}" IsVisible="{Binding LabelErrorResponseIsVisible}"></Label>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

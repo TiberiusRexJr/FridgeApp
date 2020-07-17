@@ -17,7 +17,7 @@ namespace FridgeIt.Database
         private object instance = null;
 
     
-       DatabaseUser()
+       public DatabaseUser()
         {
             _databaseUser = new SQLiteConnection(_databaseUserPath);
             _databaseUser.CreateTable<UserModel>();
@@ -42,14 +42,20 @@ namespace FridgeIt.Database
         public bool Create(UserModel user)
         {
             /*
-                accept a userModel, look for any instances with same u.userId; if none insert user into Table<UserModel>
+                accept a userModel, look for any instances with same u.userEmail; if none insert user into Table<UserModel>
              */
-            var idMax = _databaseUser.Table<UserModel>().OrderByDescending(u => u.userId).FirstOrDefault();
-
-            user.userId = (idMax == null ? 1 : idMax.userId + 1);
-
-            _databaseUser.Insert(user);
-            return true;
+            var searchResult = _databaseUser.Table<UserModel>().Where(u => u.userEmail == user.userEmail);
+            if(searchResult==null)
+            {
+                var idMax = _databaseUser.Table<UserModel>().OrderByDescending(u => u.userId).FirstOrDefault();
+                user.userId = (idMax == null ? 1 : idMax.userId + 1);
+                _databaseUser.Insert(user);
+                return true;
+            }
+            else
+            {
+                return false;
+            }
 
         }
         //read

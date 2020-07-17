@@ -33,7 +33,7 @@ namespace FridgeIt.ViewModels
         public bool LabelErrorResponseIsVisible
         {
             get { return labelErrorResponseIsVisible; }
-            set { LabelErrorResponseIsVisible = value; OnPropertyChanged(nameof(LabelErrorResponseIsVisible)); }
+            set { labelErrorResponseIsVisible = value; OnPropertyChanged(nameof(LabelErrorResponseIsVisible)); }
         }
         void OnPropertyChanged(string name)
         {
@@ -50,6 +50,7 @@ namespace FridgeIt.ViewModels
             db = new DatabaseUser();
             CommandButtonRegister = new Command(CommandButtonClicked);
             LabelErrorResponseIsVisible = false;
+            labelErrorResponse = null;
     
         }
 
@@ -77,14 +78,15 @@ namespace FridgeIt.ViewModels
             if(status==false)
             {
                 LabelErrorResponse = "Email already in use, please try again";
+                
                 LabelErrorResponseIsVisible = true;
                 App.Current.MainPage.DisplayAlert("SystemAlert", status.ToString(), "Ok");
 
             }
             else
             {
-             
 
+                LabelErrorResponseIsVisible = false;
                 App.Current.MainPage.DisplayAlert("SystemAlert", user.userEmail + "Successfully Registered", "Ok");
                 App.Current.MainPage = new NavigationPage(new NavigationMenu("Dashboard"));
             }

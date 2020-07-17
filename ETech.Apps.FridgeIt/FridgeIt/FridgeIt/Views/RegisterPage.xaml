@@ -14,7 +14,7 @@
             <Entry x:Name="EntryEmail" Text="{Binding Email}" Placeholder="Email" Keyboard="Email"></Entry>
             <Entry x:Name="EntryPassword" Text="{Binding Password}" Placeholder="password" Keyboard="Text"></Entry>
             <Button x:Name="ButtonRegister" Text="Register" Command="{Binding CommandButtonRegister}" ></Button>
-            <Label x:Name="LabelErrorResponse" Text="{Binding LabelErrorResponse}" IsVisible="{Binding LabelErrorResponseIsVisible}"></Label>
+            <Label x:Name="LabelErrorResponse" Text="{Binding labelErrorResponse}" IsVisible="{Binding labelErrorResponseIsVisible}"></Label>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

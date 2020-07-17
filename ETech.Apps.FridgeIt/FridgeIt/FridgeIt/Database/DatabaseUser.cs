@@ -2,6 +2,7 @@
 using SQLite;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Text;
 
@@ -45,7 +46,10 @@ namespace FridgeIt.Database
                 accept a userModel, look for any instances with same u.userEmail; if none insert user into Table<UserModel>
              */
             var searchResult = _databaseUser.Table<UserModel>().Where(u => u.userEmail == user.userEmail);
-            if(searchResult==null)
+            int count = searchResult.Count();
+
+            
+            if(count==0)
             {
                 var idMax = _databaseUser.Table<UserModel>().OrderByDescending(u => u.userId).FirstOrDefault();
                 user.userId = (idMax == null ? 1 : idMax.userId + 1);

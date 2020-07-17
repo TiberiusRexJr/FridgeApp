@@ -7,10 +7,11 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 using FridgeIt.Views;
+using System.ComponentModel;
 
 namespace FridgeIt.ViewModels
 {
-    public class RegisterPageViewModel : ContentPage
+    public class RegisterPageViewModel :ContentPage,INotifyPropertyChanged
     {
         UserModel user;
         DatabaseUser db;
@@ -19,9 +20,25 @@ namespace FridgeIt.ViewModels
         public string Lastname { get; set; }
         public string Email { get; set; }
         public string Password { get; set; }
-        public string LabelErrorResponse { get; set; }
-        public bool LabelErrorResponseIsVisible { get; set; }
+        public string labelErrorResponse { get; set; }
+        public bool labelErrorResponseIsVisible { get; set; }
 
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        public string LabelErrorResponse
+        {
+            get { return labelErrorResponse; }
+            set { labelErrorResponse = value; OnPropertyChanged(nameof(labelErrorResponse)); }
+        }
+        public bool LabelErrorResponseIsVisible
+        {
+            get { return labelErrorResponseIsVisible; }
+            set { LabelErrorResponseIsVisible = value; OnPropertyChanged(nameof(LabelErrorResponseIsVisible)); }
+        }
+        void OnPropertyChanged(string name)
+        {
+            PropertyChanged?.Invoke(this,new PropertyChangedEventArgs(name));
+        }
         public string Firstname
         {
             get { return firstname; }
@@ -32,6 +49,7 @@ namespace FridgeIt.ViewModels
             user = new UserModel();
             db = new DatabaseUser();
             CommandButtonRegister = new Command(CommandButtonClicked);
+            LabelErrorResponseIsVisible = false;
     
         }
 
@@ -65,10 +83,10 @@ namespace FridgeIt.ViewModels
             }
             else
             {
-                App.Current.MainPage.DisplayAlert("SystemAlert", status.ToString(), "Ok");
+             
 
                 App.Current.MainPage.DisplayAlert("SystemAlert", user.userEmail + "Successfully Registered", "Ok");
-                App.Current.MainPage = new NavigationPage(new DashboardPage());
+                App.Current.MainPage = new NavigationPage(new NavigationMenu("Dashboard"));
             }
         }
 

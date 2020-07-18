@@ -3,6 +3,7 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 /*using FridgeIt.Services;*/
 using FridgeIt.Views;
+using Xamarin.Essentials;
 
 namespace FridgeIt
 {
@@ -28,5 +29,6 @@ namespace FridgeIt
         protected override void OnResume()
         {
         }
+        
     }
 }

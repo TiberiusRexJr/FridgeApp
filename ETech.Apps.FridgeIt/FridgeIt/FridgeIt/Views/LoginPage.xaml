@@ -7,13 +7,14 @@
              x:Class="FridgeIt.Views.LoginPage"
              ControlTemplate="{StaticResource TemplateHeaderFooter}">
     <StackLayout>
-        <Label x:Name="LabelUsername" Text="Username"></Label>
-        <Entry x:Name="EntryUsername" Placeholder="Username" Keyboard="Text" Text="{Binding Username,Mode=OneWayToSource}"></Entry>
-        <Label x:Name="LabelPassword" Text="Password"></Label>
-        <Entry x:Name="EntryUserPassword" Placeholder="Password" Keyboard="Text" Text="{Binding Password,Mode=OneWayToSource}"></Entry>
-        <Button x:Name="ButtonLogin" Text="Submit" Command="{Binding }"></Button>
-        
-        <Label x:Name="LabelRegister" Text="Sign Up" >
+        <Entry x:Name="EntryUserEmail" Placeholder="Email" Keyboard="Text" Text="{Binding UserEmail}"></Entry>
+        <Entry x:Name="EntryUserPassword" Placeholder="Password" Keyboard="Text" Text="{Binding UserPassword}"></Entry>
+        <Button x:Name="ButtonLogin" Text="Log In" Command="{Binding CommandButtonLogin}"></Button>
+        <Label x:Name="LabelRegistrationFailed" TextColor="Red" Text="{Binding LabelLoginFailed}" IsVisible="{Binding LabelLoginFailedIsVisible}" >
+            
+        </Label>
+
+        <Label x:Name="LabelRegister" Text="Register" >
             
         </Label>
     </StackLayout>

@@ -2,60 +2,91 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
-
+using FridgeIt.Database;
+using FridgeIt.Views;
 using Xamarin.Forms;
 
 namespace FridgeIt.ViewModels
 {
     public class LoginPageViewModel : ContentView, INotifyPropertyChanged
     {
-        public Command buttonLoginCommand;
-        public string username;
-        public string password;
-        public Label registerLabel;
-        
-        
+        public Command commandButtonLogin;
+        public Command commandLabelRegister;
+        public string userEmail;
+        public string userPassword;
+        public string registerLabel = "Register";
 
-        public string Username
+        private string labelLoginFailed;
+        private bool labelLoginFailedIsVisible;
+
+        public event PropertyChangedEventHandler PropertyChanged;
+        public string UserEmail
         {
-            get => username;
-            set
-            {
-                username = value;
-                //propertychanged
-            }
+            get { return userEmail; }
+            set { userEmail = value; }
         }
-        public string Password
+        public string UserPassword
         {
-            get => password;
-            set
-            {
-                password = value;
-                //propertychanged
-            }
+            get { return userPassword; }
+            set { userPassword = value; }
         }
-        
+        public string RegisterLabel
+        {
+            set { registerLabel = value;}
+        }
+        public Command CommandButtonLogin
+        {
+            get { return commandButtonLogin; }
+            set { commandButtonLogin = value; }
+        }
+        public Command CommandLabelRegister
+        {
+            get { return CommandLabelRegister; }
+            set { CommandLabelRegister = value; }
+        }
+
+        void OnPropertyChanged([CallerMemberName] string propertyName=null)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
+
+        public bool LabelLoginFailedIsVisible 
+        {
+            get { return labelLoginFailedIsVisible; }
+            set { labelLoginFailedIsVisible = value; OnPropertyChanged(); }
+        }
+
+        public string LabelLoginFailed { get => labelLoginFailed; set => labelLoginFailed = value; }
+
         public LoginPageViewModel()
         {
-            InitializeCommandButton();
+            //call setcommandsFunctions
+            //
+            CommandButtonLogin = new Command(Button_Login_Clicked);
+            LabelLoginFailedIsVisible = false;
+            LabelLoginFailed = "Log In Failed, Invalid Email/Password Combination"; 
         }
 
-        private void InitializeCommandButton()
+        private void Button_Login_Clicked(object sender)
         {
-            buttonLoginCommand = new Command(() =>
-              {
+            DatabaseUser db = new DatabaseUser();
+            
+            bool authorization=db.Validation(UserEmail, UserPassword);
+            if(authorization==false)
+            {
+                LabelLoginFailedIsVisible = true;
+            }
+            else
+            {
+                LabelLoginFailedIsVisible = false;
+                App.Current.MainPage = new NavigationMenu("Dashboard");
+            }
 
-              });
+            
         }
 
-        private void ButtonLoginClick(object sender, EventArgs e)
-        {
-            //disable "login" BUTTON
-            //pass "UserName" and "Password" PROPERTIES to DATABASE CRUD VALIDATE LOGIN function
-            //IF TRUE =>App.Mainpage=new DashBoardPage
-            //IF FALSE=> LabelAlert.Text="Invalid Credentials, please try again"
-
-        }
+        
     }
 }

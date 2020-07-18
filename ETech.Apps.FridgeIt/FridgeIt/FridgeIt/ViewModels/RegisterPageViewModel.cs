@@ -28,7 +28,7 @@ namespace FridgeIt.ViewModels
         public string LabelErrorResponse
         {
             get { return labelErrorResponse; }
-            set { labelErrorResponse = value; OnPropertyChanged(nameof(labelErrorResponse)); }
+            set { labelErrorResponse = value; OnPropertyChanged(nameof(LabelErrorResponse)); }
         }
         public bool LabelErrorResponseIsVisible
         {
@@ -50,7 +50,7 @@ namespace FridgeIt.ViewModels
             db = new DatabaseUser();
             CommandButtonRegister = new Command(CommandButtonClicked);
             LabelErrorResponseIsVisible = false;
-            labelErrorResponse = null;
+            LabelErrorResponse = null;
     
         }
 
@@ -92,11 +92,7 @@ namespace FridgeIt.ViewModels
             }
         }
 
-        /*async Task CommandButtonClicked()
-        {
-                await Application.Current.MainPage.DisplayAlert("SystemMessage", Firstname + Lastname + Email + Password, "Ok");
-
-        }*/
+      
 
     }
 }

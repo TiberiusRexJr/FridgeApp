@@ -27,17 +27,15 @@ namespace FridgeIt.Database
 
         public bool Validation(string userEmail,string userPassword)
         {
-            /* find a USERMODEL object in DATABASE_USER table where username is==username and password==password
-                return true or false
-             */
-
-            _databaseUser.Table<UserModel>().FirstOrDefault(u => u.userEmail == userEmail && u.userPassword == userPassword);
-            if (_databaseUser == null)
+            var searchResults = _databaseUser.Table<UserModel>().Where(u => u.userEmail == userEmail && u.userPassword == userPassword);
+            int rowCount = searchResults.Count();
+            if (rowCount == 0)
             {
                 return false;
             }
             else
                 return true;
+
         }
         //create
         public bool Create(UserModel user)
@@ -65,6 +63,7 @@ namespace FridgeIt.Database
         //read
         public UserModel Retrieve(string userEmail)
         {
+           
             throw new NotImplementedException();
         }
         //update

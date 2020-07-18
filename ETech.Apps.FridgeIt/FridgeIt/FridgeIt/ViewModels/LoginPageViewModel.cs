@@ -6,6 +6,7 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using FridgeIt.Database;
 using FridgeIt.Views;
+using Xamarin.Essentials;
 using Xamarin.Forms;
 
 namespace FridgeIt.ViewModels
@@ -69,7 +70,7 @@ namespace FridgeIt.ViewModels
             LabelLoginFailed = "Log In Failed, Invalid Email/Password Combination"; 
         }
 
-        private void Button_Login_Clicked(object sender)
+        private async void Button_Login_Clicked(object sender)
         {
             DatabaseUser db = new DatabaseUser();
             
@@ -81,6 +82,14 @@ namespace FridgeIt.ViewModels
             else
             {
                 LabelLoginFailedIsVisible = false;
+                try
+                {
+                    await SecureStorage.SetAsync("token", UserPassword);
+                }
+                catch(Exception ex)
+                {
+                    //Secure Storage not supported
+                }
                 App.Current.MainPage = new NavigationMenu("Dashboard");
             }
 

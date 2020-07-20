@@ -27,9 +27,10 @@ namespace FridgeIt.ViewModels
         private string token_userPassword;
         private string token_userEmail;
 
+        private string preferences_keepMeLoggedIn = "preferences_keep_me_logged_in";
+
         private string labelLoginFailed;
         private bool labelLoginFailedIsVisible;
-        private bool switchToggle;
 
         
         
@@ -79,19 +80,20 @@ namespace FridgeIt.ViewModels
             get { return labelLoginFailedIsVisible; }
             set { labelLoginFailedIsVisible = value; OnPropertyChanged(); }
         }
+        public bool SwitchToggle
+        {
+            get => Preferences.Get(preferences_keepMeLoggedIn, false);
+            set
+            {
 
+                Preferences.Set(preferences_keepMeLoggedIn,value);
+                OnPropertyChanged();
+            }
+        }  
         public string LabelLoginFailed { get => labelLoginFailed; set => labelLoginFailed = value; }
         public string Token_userPassword { get => token_userPassword; set => token_userPassword = value; }
         public string Token_userEmail { get => token_userEmail; set => token_userEmail = value; }
-        public bool SwitchToggle
-        {
-            get => switchToggle;
-            set
-            {
-                switchToggle = value;
-                OnPropertyChanged();
-            }
-        }
+        
         #endregion
         public LoginPageViewModel()
         {
@@ -109,8 +111,8 @@ namespace FridgeIt.ViewModels
         }
         private void CheckKeepMeLoggedIn()
         {
-            bool autoLogin = checkLoginSettings();
-            if(autoLogin)
+            bool keepMeLoggedIn = Preferences.Get(preferences_keepMeLoggedIn, false);
+            if(keepMeLoggedIn)
             {
                 var credentials = getTokenCredentials();
                 UserEmail = credentials.Result.userEmail;

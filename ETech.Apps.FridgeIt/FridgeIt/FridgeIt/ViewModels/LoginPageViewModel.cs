@@ -147,7 +147,7 @@ namespace FridgeIt.ViewModels
 
         /// <summary>
         /// <para>
-        /// checks <c>Settings obj</c> to see if the <c>"keepMeLoggedIn"</c> property of the <c>SettingsPageViewModel</c> is set to on or off
+        /// checks <c>SettingsPage obj</c> to see if the <c>"keepMeLoggedIn"</c> property of the <c>SettingsPageViewModel</c> is set to on or off
         /// </para>
         /// </summary>
         /// <returns>bool</returns>

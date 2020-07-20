@@ -11,9 +11,9 @@ using Xamarin.Forms.Xaml;
 namespace FridgeIt.Views.Pages
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Settings : ContentPage
+    public partial class SettingsPage : ContentPage
     {
-        public Settings()
+        public SettingsPage()
         {
             InitializeComponent();
             BindingContext = new SettingsPageViewModel();

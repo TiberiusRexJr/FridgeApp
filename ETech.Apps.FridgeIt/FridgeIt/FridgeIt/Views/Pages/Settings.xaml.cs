@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FridgeIt.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,7 @@ namespace FridgeIt.Views.Pages
         public Settings()
         {
             InitializeComponent();
+            BindingContext = new SettingsPageViewModel();
         }
     }
 }

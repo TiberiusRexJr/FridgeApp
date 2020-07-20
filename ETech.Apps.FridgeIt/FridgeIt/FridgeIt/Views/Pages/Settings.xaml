@@ -8,11 +8,10 @@
              x:Class="FridgeIt.Views.Pages.Settings">
     <StackLayout>
         <Label Text="Settigs"></Label>
-        <Picker Title="" />
-        <Slider Minimum="0" Maximum="1" />
-        <Slider Minimum="0" Maximum="1" />
-        <Switch IsToggled="false" />
-        <Slider Minimum="0" Maximum="1" />
+        <Grid>
+            <Label x:Name="LabelKeepMeLoggedIn" Text="Keep Me Logged In" TextColor="Blue" ></Label>
+            <Switch x:Name="SwitchKeepMeLoggedI" IsToggled="{Binding SwitchKeepMeLoggedIn}"></Switch>
+        </Grid>
     
     </StackLayout>
     

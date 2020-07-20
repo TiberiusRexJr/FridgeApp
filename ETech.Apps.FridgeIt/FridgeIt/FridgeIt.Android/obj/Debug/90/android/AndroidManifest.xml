@@ -28,4 +28,5 @@
       </intent-filter>
     </receiver>
   </application>
+  <application android:allowBackup="false"></application>
 </manifest>

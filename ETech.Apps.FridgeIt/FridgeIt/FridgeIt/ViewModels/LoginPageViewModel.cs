@@ -27,9 +27,10 @@ namespace FridgeIt.ViewModels
         private string token_userPassword;
         private string token_userEmail;
 
+        private string preferences_keepMeLoggedIn = "preferences_keep_me_logged_in";
+
         private string labelLoginFailed;
         private bool labelLoginFailedIsVisible;
-        private bool switchToggle;
 
         
         
@@ -79,19 +80,20 @@ namespace FridgeIt.ViewModels
             get { return labelLoginFailedIsVisible; }
             set { labelLoginFailedIsVisible = value; OnPropertyChanged(); }
         }
+        public bool SwitchToggle
+        {
+            get => Preferences.Get(preferences_keepMeLoggedIn, false);
+            set
+            {
 
+                Preferences.Set(preferences_keepMeLoggedIn,value);
+                OnPropertyChanged();
+            }
+        }  
         public string LabelLoginFailed { get => labelLoginFailed; set => labelLoginFailed = value; }
         public string Token_userPassword { get => token_userPassword; set => token_userPassword = value; }
         public string Token_userEmail { get => token_userEmail; set => token_userEmail = value; }
-        public bool SwitchToggle
-        {
-            get => switchToggle;
-            set
-            {
-                switchToggle = value;
-                OnPropertyChanged();
-            }
-        }
+        
         #endregion
         public LoginPageViewModel()
         {
@@ -99,22 +101,25 @@ namespace FridgeIt.ViewModels
             //
             CommandButtonLogin = new Command(Button_Login_Clicked);
             LabelLoginFailedIsVisible = false;
-            SwitchToggle = false;
             LabelLoginFailed = "Log In Failed, Invalid Email/Password Combination";
             Token_userEmail = "token_userEmail";
             Token_userPassword = "token_userPassword";
 
-            CheckKeepMeLoggedIn();
+            CheckPreferences();
             
         }
-        private void CheckKeepMeLoggedIn()
+        private void CheckPreferences()
         {
-            bool autoLogin = checkLoginSettings();
-            if(autoLogin)
+            bool keepMeLoggedIn = Preferences.Get(preferences_keepMeLoggedIn, false);
+            if(keepMeLoggedIn)
             {
-                var credentials = getTokenCredentials();
+                var credentials = GetTokenCredentials();
                 UserEmail = credentials.Result.userEmail;
-                userPassword = credentials.Result.userPassword;
+                UserPassword = credentials.Result.userPassword;
+            }
+            if(!keepMeLoggedIn)
+            {
+
             }
         }
 
@@ -157,7 +162,7 @@ namespace FridgeIt.ViewModels
         /// </para>
         /// </summary>
         /// <returns>(string userEmail,string userPasword) OR (null,null) if <c>SecureStorage</c> token does not exist</returns>
-        private async Task<(string userEmail,string userPassword)> getTokenCredentials()
+        private async Task<(string userEmail,string userPassword)> GetTokenCredentials()
         {
             string userEmail = null;
             string userPassword = null;

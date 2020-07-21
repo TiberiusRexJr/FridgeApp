@@ -6,10 +6,13 @@ using Xamarin.Essentials;
 
 namespace FridgeIt.Persistence
 {
+    /// <summary>
+    /// <para>Class that holds <c>Constants</c> for User's sensitive information and functions to access and manipulate said data. One standar location makes it easier to maintain in the future. Edit in one location have to trickle down to wherever esle the data is used</para>
+    /// </summary>
     class Token
     {
         #region Variables
-        string token_userPassword;
+        string  token_userPassword;
         string token_userEmail;
         #endregion
 
@@ -28,7 +31,7 @@ namespace FridgeIt.Persistence
         #endregion
 
         #region Functions
-        private async Task<(string userEmail, string userPassword)> GetTokenCredentials()
+        public async Task<(string userEmail, string userPassword)> GetTokenCredentials()
         {
             string userEmail = null;
             string userPassword = null;

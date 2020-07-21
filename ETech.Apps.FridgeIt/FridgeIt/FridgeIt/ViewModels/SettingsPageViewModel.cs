@@ -1,11 +1,14 @@
-﻿using System;
+﻿using FridgeIt.Persistence;
+using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Runtime.CompilerServices;
 using System.Text;
 using Xamarin.Essentials;
 
 namespace FridgeIt.ViewModels
 {
-    class SettingsPageViewModel
+    class SettingsPageViewModel:INotifyPropertyChanged
     {
 
         #region Variables
@@ -27,6 +30,22 @@ namespace FridgeIt.ViewModels
 
                 }
         }
+        #endregion
+        #region ImplementationINotifyProperyChanged
+        public event PropertyChangedEventHandler PropertyChanged;
+
+         void OnPropertyChanged([CallerMemberName] string PropertyName=null)
+        {
+            PropertyChanged?.Invoke(this,new PropertyChangedEventArgs(PropertyName));
+        }
+        #endregion
+        #region Constructor
+        public SettingsPageViewModel()
+        {
+
+        }
+        #endregion
+        #region Functions
         #endregion
     }
 }

@@ -26,6 +26,7 @@
 
   <ItemGroup>
     <Folder Include="Initial\" />
+    <Folder Include="Interfaces\" />
     <Folder Include="Utilities\" />
     <Folder Include="Services\" />
     <Folder Include="Views\Templates\" />
@@ -39,6 +40,9 @@
 
   <ItemGroup>
     <EmbeddedResource Update="Views\LoginPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Pages\DashboardPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\Pages\MyFridgeHealth.xaml">

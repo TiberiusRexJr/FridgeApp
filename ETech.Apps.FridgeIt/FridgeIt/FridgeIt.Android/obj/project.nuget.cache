@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IuFPL/ANBN3yaLIuUGmOjuwPy7ktqVJfppTS5T9z/J3bNHLOT3dYMZAUfRqox7wX7zwwkoLf8H+OdthyB1erhA==",
+  "dgSpecHash": "Y+8uVO2RjDYNr+9tGHqkgMxx0rdG1/wm+BRZmirkg87fMtfHQ3uJ3Grv9FkJIhe8rrKdDSGcBAM9/d7ILsCLtQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\rouni\\Desktop\\FridgeApp\\ETech.Apps.FridgeIt\\FridgeIt\\FridgeIt.Android\\FridgeIt.Android.csproj",
+  "projectFilePath": "C:\\Users\\rouni\\Documents\\FridgeApp\\ETech.Apps.FridgeIt\\FridgeIt\\FridgeIt.Android\\FridgeIt.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\rouni\\.nuget\\packages\\microcharts\\0.7.1\\microcharts.0.7.1.nupkg.sha512",
     "C:\\Users\\rouni\\.nuget\\packages\\microcharts.forms\\0.7.1\\microcharts.forms.0.7.1.nupkg.sha512",

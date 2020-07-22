@@ -7,7 +7,7 @@ androiddextool=d8
 androidlinktool=
 androidpackageformat=apk
 usesharedruntime=true
-embedassembliesintoapk=false
+embedassembliesintoapk=true
 androidlinkmode=none
 androidlinkskip=
 androidsdkbuildtoolsversion=29.0.2
@@ -24,5 +24,9 @@ androidgeneratejnimarshalmethods=false
 os=windows_nt
 androidincludedebugsymbols=true
 androidpackagenamingpolicy=lowercasecrc64
+<<<<<<< HEAD
 _nugetassetstimestamp=637310231547908572
+=======
+_nugetassetstimestamp=637310194072060371
+>>>>>>> RefinementPersistenceCentralization
 typemapkind=strings-asm

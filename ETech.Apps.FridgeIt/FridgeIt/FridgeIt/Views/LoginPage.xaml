@@ -10,11 +10,17 @@
         <Entry x:Name="EntryUserEmail" Placeholder="Email" Keyboard="Text" Text="{Binding UserEmail}"></Entry>
         <Entry x:Name="EntryUserPassword" Placeholder="Password" Keyboard="Text" Text="{Binding UserPassword}"></Entry>
         <Button x:Name="ButtonLogin" Text="Log In" Command="{Binding CommandButtonLogin}"></Button>
+        <Grid>
+            <Label x:Name="LabelSwitch" Text="Keep Me Logged In" TextColor="Green"></Label>
+
+            <Switch  x:Name="SwitchKeepMeLoggedIn" IsToggled="{Binding SwitchToggle}"></Switch>
+
+        </Grid>
         <Label x:Name="LabelRegistrationFailed" TextColor="Red" Text="{Binding LabelLoginFailed}" IsVisible="{Binding LabelLoginFailedIsVisible}" >
             
         </Label>
 
-        <Label x:Name="LabelRegister" Text="Register" >
+        <Label x:Name="LabelRegister" Text="Register" TextColor="Black"  >
             
         </Label>
     </StackLayout>

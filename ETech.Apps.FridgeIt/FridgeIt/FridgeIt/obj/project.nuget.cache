@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "qnpuqrj8sVzO34PelJfVehEufmxYI4RYviV+1NVyMyLKiA5WsM5m904435UnNZ6AafNCM1wf9VkgGVMDGhxfQQ==",
+  "dgSpecHash": "mkvyR18zwDvpPHG5o1P5svV7XLsEB2pWzl3E6pZbIfGWCGa8YyIbzncef5nIQqAxLVsjKQYbj5s4SdWA+BsaVw==",
   "success": true,
   "projectFilePath": "C:\\Users\\rouni\\Desktop\\FridgeApp\\ETech.Apps.FridgeIt\\FridgeIt\\FridgeIt\\FridgeIt.csproj",
   "expectedPackageFiles": [
@@ -20,7 +20,7 @@
     "C:\\Users\\rouni\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\rouni\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
     "C:\\Users\\rouni\\.nuget\\packages\\system.valuetuple\\4.4.0\\system.valuetuple.4.4.0.nupkg.sha512",
-    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.3.1\\xamarin.essentials.1.3.1.nupkg.sha512",
+    "C:\\Users\\rouni\\.nuget\\packages\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
     "C:\\Users\\rouni\\.nuget\\packages\\xamarin.forms\\4.5.0.495\\xamarin.forms.4.5.0.495.nupkg.sha512"
   ],
   "logs": []

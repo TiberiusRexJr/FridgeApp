@@ -2,23 +2,21 @@ C:\Users\rouni\Desktop\FridgeApp\ETech.Apps.FridgeIt\FridgeIt\FridgeIt\bin\Debug
 C:\Users\rouni\Desktop\FridgeApp\ETech.Apps.FridgeIt\FridgeIt\FridgeIt\bin\Debug\netstandard2.0\FridgeIt.dll
 C:\Users\rouni\Desktop\FridgeApp\ETech.Apps.FridgeIt\FridgeIt\FridgeIt\bin\Debug\netstandard2.0\ref\FridgeIt.dll
 C:\Users\rouni\Desktop\FridgeApp\ETech.Apps.FridgeIt\FridgeIt\FridgeIt\bin\Debug\netstandard2.0\FridgeIt.pdb
-C:\Users\rouni\Desktop\FridgeApp\ETech.Apps.FridgeIt\FridgeIt\FridgeIt\obj\Debug\netstandard2.0\FridgeIt.csprojAssemblyReference.cache
 C:\Users\rouni\Desktop\FridgeApp\ETech.Apps.FridgeIt\FridgeIt\FridgeIt\obj\Debug\netstandard2.0\App.xaml.g.cs
 C:\Users\rouni\Desktop\FridgeApp\ETech.Apps.FridgeIt\FridgeIt\FridgeIt\obj\Debug\netstandard2.0\Views\LoginPage.xaml.g.cs
 C:\Users\rouni\Desktop\FridgeApp\ETech.Apps.FridgeIt\FridgeIt\FridgeIt\obj\Debug\netstandard2.0\Views\NavigationMenu\NavigationMenu.xaml.g.cs
 C:\Users\rouni\Desktop\FridgeApp\ETech.Apps.FridgeIt\FridgeIt\FridgeIt\obj\Debug\netstandard2.0\Views\NavigationMenu\NavigationMenuDetail.xaml.g.cs
 C:\Users\rouni\Desktop\FridgeApp\ETech.Apps.FridgeIt\FridgeIt\FridgeIt\obj\Debug\netstandard2.0\Views\NavigationMenu\NavigationMenuMaster.xaml.g.cs
+C:\Users\rouni\Desktop\FridgeApp\ETech.Apps.FridgeIt\FridgeIt\FridgeIt\obj\Debug\netstandard2.0\Views\Pages\DashboardPage.xaml.g.cs
 C:\Users\rouni\Desktop\FridgeApp\ETech.Apps.FridgeIt\FridgeIt\FridgeIt\obj\Debug\netstandard2.0\Views\Pages\MyFridgeHealth.xaml.g.cs
 C:\Users\rouni\Desktop\FridgeApp\ETech.Apps.FridgeIt\FridgeIt\FridgeIt\obj\Debug\netstandard2.0\Views\Pages\MyFridgeTrends.xaml.g.cs
+C:\Users\rouni\Desktop\FridgeApp\ETech.Apps.FridgeIt\FridgeIt\FridgeIt\obj\Debug\netstandard2.0\Views\Pages\SettingsPage.xaml.g.cs
 C:\Users\rouni\Desktop\FridgeApp\ETech.Apps.FridgeIt\FridgeIt\FridgeIt\obj\Debug\netstandard2.0\Views\RegisterPage.xaml.g.cs
 C:\Users\rouni\Desktop\FridgeApp\ETech.Apps.FridgeIt\FridgeIt\FridgeIt\obj\Debug\netstandard2.0\FridgeIt.AssemblyInfoInputs.cache
 C:\Users\rouni\Desktop\FridgeApp\ETech.Apps.FridgeIt\FridgeIt\FridgeIt\obj\Debug\netstandard2.0\FridgeIt.AssemblyInfo.cs
+C:\Users\rouni\Desktop\FridgeApp\ETech.Apps.FridgeIt\FridgeIt\FridgeIt\obj\Debug\netstandard2.0\FridgeIt.csproj.CoreCompileInputs.cache
+C:\Users\rouni\Desktop\FridgeApp\ETech.Apps.FridgeIt\FridgeIt\FridgeIt\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Users\rouni\Desktop\FridgeApp\ETech.Apps.FridgeIt\FridgeIt\FridgeIt\obj\Debug\netstandard2.0\FridgeIt.dll
 C:\Users\rouni\Desktop\FridgeApp\ETech.Apps.FridgeIt\FridgeIt\FridgeIt\obj\Debug\netstandard2.0\ref\FridgeIt.dll
 C:\Users\rouni\Desktop\FridgeApp\ETech.Apps.FridgeIt\FridgeIt\FridgeIt\obj\Debug\netstandard2.0\FridgeIt.pdb
-C:\Users\rouni\Desktop\FridgeApp\ETech.Apps.FridgeIt\FridgeIt\FridgeIt\obj\Debug\netstandard2.0\Views\Pages\Settings.xaml.g.cs
-<<<<<<< HEAD
-=======
-C:\Users\rouni\Desktop\FridgeApp\ETech.Apps.FridgeIt\FridgeIt\FridgeIt\obj\Debug\netstandard2.0\FridgeIt.csproj.CoreCompileInputs.cache
-C:\Users\rouni\Desktop\FridgeApp\ETech.Apps.FridgeIt\FridgeIt\FridgeIt\obj\Debug\netstandard2.0\XamlC.stamp
->>>>>>> ExpirimentDatabase
+C:\Users\rouni\Desktop\FridgeApp\ETech.Apps.FridgeIt\FridgeIt\FridgeIt\obj\Debug\netstandard2.0\FridgeIt.csprojAssemblyReference.cache

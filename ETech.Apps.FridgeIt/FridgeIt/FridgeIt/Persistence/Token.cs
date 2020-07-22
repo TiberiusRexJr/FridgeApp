@@ -12,21 +12,33 @@ namespace FridgeIt.Persistence
     class Token
     {
         #region Variables
-        string  token_userPassword;
-        string token_userEmail;
+        static string Token_userEmail = "Token_userEmail";
+        static string Token_userPassword = "Token_userPassword";
         #endregion
 
         #region Properties
-        public string Token_userPassword { get => token_userPassword; set => token_userPassword = value; }
-        public string Token_userEmail { get => token_userEmail; set => token_userEmail = value; }
+        public string TokenUserEmail
+            {
+                get{
+                return Token_userEmail;
+                    }
+            }
+        public string TokenUserPassword
+        {
+            get
+            {
+                return Token_userPassword;
+            }
+        }
+            
+            
         #endregion
 
         #region Constructor
 
         public Token()
         {
-            Token_userEmail = "token_userEmail";
-            Token_userPassword = "token_userPassword";
+
         }
         #endregion
 
@@ -36,8 +48,9 @@ namespace FridgeIt.Persistence
             string userEmail = null;
             string userPassword = null;
 
-            userEmail = await SecureStorage.GetAsync(Token_userEmail);
-            userPassword = await SecureStorage.GetAsync(Token_userPassword);
+            userEmail = await SecureStorage.GetAsync(TokenUserEmail
+                );
+            userPassword = await SecureStorage.GetAsync(TokenUserPassword);
 
             return (userEmail, userPassword);
         }

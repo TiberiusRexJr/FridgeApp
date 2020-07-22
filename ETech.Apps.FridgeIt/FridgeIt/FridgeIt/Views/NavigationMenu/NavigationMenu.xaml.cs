@@ -56,7 +56,7 @@ namespace FridgeIt.Views
             Type pagetype = null;
             switch (pageTitle)
             {
-                case "DashboardPage":
+                case "Dashboard":
                     pagetype = typeof(DashboardPage);
                     break;
                 case "My Fridge Health":

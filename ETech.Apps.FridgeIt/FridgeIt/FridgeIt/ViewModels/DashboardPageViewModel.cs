@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using FridgeIt.Persistence;
 using System.Threading.Tasks;
 using Xamarin.Essentials;
 
@@ -10,19 +11,21 @@ namespace FridgeIt.ViewModels
     {
         #region Variables 
         private string Token_userEmail = "token_userEmail";
+        private Token _token = new Token();
         #endregion
 
         #region Properties 
 
         public string LabelUsername
         {
-            get {
-                var credentials = GetTokenCredentials();
-                return credentials.Result.userEmail; 
-                }
-            set { 
-                    
-                }
+            get
+            {
+                string x = null;
+                var username = _token.GetTokenCredentials();
+                x = username.Result.userEmail;
+
+                return x;
+            }       
         }
         #endregion
         #region Constructor

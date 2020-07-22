@@ -2388,11 +2388,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\rouni\\Desktop\\FridgeApp\\ETech.Apps.FridgeIt\\FridgeIt\\FridgeIt.Android\\FridgeIt.Android.csproj",
+      "projectUniqueName": "C:\\Users\\rouni\\Documents\\FridgeApp\\ETech.Apps.FridgeIt\\FridgeIt\\FridgeIt.Android\\FridgeIt.Android.csproj",
       "projectName": "FridgeIt.Android",
-      "projectPath": "C:\\Users\\rouni\\Desktop\\FridgeApp\\ETech.Apps.FridgeIt\\FridgeIt\\FridgeIt.Android\\FridgeIt.Android.csproj",
+      "projectPath": "C:\\Users\\rouni\\Documents\\FridgeApp\\ETech.Apps.FridgeIt\\FridgeIt\\FridgeIt.Android\\FridgeIt.Android.csproj",
       "packagesPath": "C:\\Users\\rouni\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\rouni\\Desktop\\FridgeApp\\ETech.Apps.FridgeIt\\FridgeIt\\FridgeIt.Android\\obj\\",
+      "outputPath": "C:\\Users\\rouni\\Documents\\FridgeApp\\ETech.Apps.FridgeIt\\FridgeIt\\FridgeIt.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -2413,8 +2413,8 @@
       "frameworks": {
         "monoandroid90": {
           "projectReferences": {
-            "C:\\Users\\rouni\\Desktop\\FridgeApp\\ETech.Apps.FridgeIt\\FridgeIt\\FridgeIt\\FridgeIt.csproj": {
-              "projectPath": "C:\\Users\\rouni\\Desktop\\FridgeApp\\ETech.Apps.FridgeIt\\FridgeIt\\FridgeIt\\FridgeIt.csproj"
+            "C:\\Users\\rouni\\Documents\\FridgeApp\\ETech.Apps.FridgeIt\\FridgeIt\\FridgeIt\\FridgeIt.csproj": {
+              "projectPath": "C:\\Users\\rouni\\Documents\\FridgeApp\\ETech.Apps.FridgeIt\\FridgeIt\\FridgeIt\\FridgeIt.csproj"
             }
           }
         }

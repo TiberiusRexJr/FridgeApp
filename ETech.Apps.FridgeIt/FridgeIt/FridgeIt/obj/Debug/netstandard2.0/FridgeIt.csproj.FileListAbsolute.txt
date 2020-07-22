@@ -19,3 +19,4 @@ C:\Users\rouni\Desktop\FridgeApp\ETech.Apps.FridgeIt\FridgeIt\FridgeIt\obj\Debug
 C:\Users\rouni\Desktop\FridgeApp\ETech.Apps.FridgeIt\FridgeIt\FridgeIt\obj\Debug\netstandard2.0\FridgeIt.dll
 C:\Users\rouni\Desktop\FridgeApp\ETech.Apps.FridgeIt\FridgeIt\FridgeIt\obj\Debug\netstandard2.0\ref\FridgeIt.dll
 C:\Users\rouni\Desktop\FridgeApp\ETech.Apps.FridgeIt\FridgeIt\FridgeIt\obj\Debug\netstandard2.0\FridgeIt.pdb
+C:\Users\rouni\Desktop\FridgeApp\ETech.Apps.FridgeIt\FridgeIt\FridgeIt\obj\Debug\netstandard2.0\FridgeIt.csprojAssemblyReference.cache

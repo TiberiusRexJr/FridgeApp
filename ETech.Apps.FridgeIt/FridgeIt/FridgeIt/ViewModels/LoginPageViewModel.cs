@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 using System.Runtime.CompilerServices;
 using System.Text;
 using FridgeIt.Database;
-using FridgeIt.Models;
 using FridgeIt.Views;
+using FridgeIt.Persistence;
 using Xamarin.Essentials;
 using Xamarin.Forms;
 
@@ -23,17 +23,11 @@ namespace FridgeIt.ViewModels
         public string userEmail;
         public string userPassword;
 
-
-        private string token_userPassword;
-        private string token_userEmail;
-
-        private string preferences_keepMeLoggedIn = "preferences_keep_me_logged_in";
-
         private string labelLoginFailed;
         private bool labelLoginFailedIsVisible;
 
-        
-        
+        private Token _token = new Token();
+        private UserPreferences _userPreferences = new UserPreferences();
 
         #endregion
 
@@ -83,17 +77,15 @@ namespace FridgeIt.ViewModels
         }
         public bool SwitchToggle
         {
-            get => Preferences.Get(preferences_keepMeLoggedIn, false);
+            get => Preferences.Get(_userPreferences.PreferenceKeepMeLoggedIn, false);
             set
             {
 
-                Preferences.Set(preferences_keepMeLoggedIn,value);
+                Preferences.Set(_userPreferences.PreferenceKeepMeLoggedIn,value);
                 OnPropertyChanged();
             }
         }  
         public string LabelLoginFailed { get => labelLoginFailed; set => labelLoginFailed = value; }
-        public string Token_userPassword { get => token_userPassword; set => token_userPassword = value; }
-        public string Token_userEmail { get => token_userEmail; set => token_userEmail = value; }
 
         #endregion
 
@@ -105,8 +97,6 @@ namespace FridgeIt.ViewModels
             CommandButtonLogin = new Command(Button_Login_Clicked);
             LabelLoginFailedIsVisible = false;
             LabelLoginFailed = "Log In Failed, Invalid Email/Password Combination";
-            Token_userEmail = "token_userEmail";
-            Token_userPassword = "token_userPassword";
 
             CheckPreferences();
             
@@ -116,10 +106,10 @@ namespace FridgeIt.ViewModels
         #region Functions
         private void CheckPreferences()
         {
-            bool keepMeLoggedIn = Preferences.Get(preferences_keepMeLoggedIn, false);
+            bool keepMeLoggedIn = Preferences.Get(_userPreferences.PreferenceKeepMeLoggedIn, false);
             if(keepMeLoggedIn)
             {
-                var credentials = GetTokenCredentials();
+                var credentials = _token.GetTokenCredentials();
                 UserEmail = credentials.Result.userEmail;
                 UserPassword = credentials.Result.userPassword;
             }
@@ -136,8 +126,10 @@ namespace FridgeIt.ViewModels
             bool authorization=db.Validation(UserEmail, UserPassword);
             if(authorization)
             {
-                await SecureStorage.SetAsync(Token_userEmail, UserEmail);
-                await SecureStorage.SetAsync(Token_userPassword, UserPassword);
+                
+
+                await SecureStorage.SetAsync(_token.TokenUserEmail, UserEmail);
+                await SecureStorage.SetAsync(_token.TokenUserPassword, UserPassword);
                 LabelLoginFailedIsVisible = false;
                 App.Current.MainPage = new NavigationMenu("Dashboard");
             

@@ -28,6 +28,7 @@ namespace FridgeIt.ViewModels
             }       
         }
         #endregion
+
         #region Constructor
             public DashboardPageViewModel()
             { 

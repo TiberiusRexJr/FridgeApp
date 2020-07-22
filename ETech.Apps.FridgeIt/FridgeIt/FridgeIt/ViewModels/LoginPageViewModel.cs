@@ -44,6 +44,7 @@ namespace FridgeIt.ViewModels
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
         #endregion
+
         #region PropertySetGet
         public string UserEmail
         {
@@ -93,8 +94,10 @@ namespace FridgeIt.ViewModels
         public string LabelLoginFailed { get => labelLoginFailed; set => labelLoginFailed = value; }
         public string Token_userPassword { get => token_userPassword; set => token_userPassword = value; }
         public string Token_userEmail { get => token_userEmail; set => token_userEmail = value; }
-        
+
         #endregion
+
+        #region Constructor
         public LoginPageViewModel()
         {
             //call setcommandsFunctions
@@ -108,6 +111,9 @@ namespace FridgeIt.ViewModels
             CheckPreferences();
             
         }
+#endregion
+
+        #region Functions
         private void CheckPreferences()
         {
             bool keepMeLoggedIn = Preferences.Get(preferences_keepMeLoggedIn, false);
@@ -145,16 +151,6 @@ namespace FridgeIt.ViewModels
         }
         
 
-        /// <summary>
-        /// <para>
-        /// checks <c>SettingsPage obj</c> to see if the <c>"keepMeLoggedIn"</c> property of the <c>SettingsPageViewModel</c> is set to on or off
-        /// </para>
-        /// </summary>
-        /// <returns>bool</returns>
-        private bool checkLoginSettings()
-        {
-            throw new NotImplementedException();
-        }
 
         /// <summary>
         /// <para>
@@ -173,6 +169,6 @@ namespace FridgeIt.ViewModels
             return (userEmail, userPassword);
         }
 
-        
+        #endregion
     }
 }

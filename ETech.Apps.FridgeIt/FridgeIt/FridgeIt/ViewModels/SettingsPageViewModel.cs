@@ -31,10 +31,10 @@ namespace FridgeIt.ViewModels
                 }
         }
         #endregion
+
         #region ImplementationINotifyProperyChanged
         public event PropertyChangedEventHandler PropertyChanged;
-
-         void OnPropertyChanged([CallerMemberName] string PropertyName=null)
+        void OnPropertyChanged([CallerMemberName] string PropertyName=null)
         {
             PropertyChanged?.Invoke(this,new PropertyChangedEventArgs(PropertyName));
         }
@@ -45,6 +45,7 @@ namespace FridgeIt.ViewModels
 
         }
         #endregion
+
         #region Functions
         #endregion
     }

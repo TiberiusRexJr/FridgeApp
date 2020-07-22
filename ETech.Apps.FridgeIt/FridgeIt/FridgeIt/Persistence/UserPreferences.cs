@@ -8,7 +8,7 @@ namespace FridgeIt.Persistence
     class UserPreferences
     {
         #region Variables
-        private string _preference_keepMeLoggedIn;
+        private static string _preference_keepMeLoggedIn= "preferences_keep_me_logged_in";
         #endregion
 
         #region Properties
@@ -22,7 +22,6 @@ namespace FridgeIt.Persistence
         #region Constructor
         public UserPreferences()
         {
-            PreferenceKeepMeLoggedIn = "preferences_keep_me_logged_in";
         }
         #endregion
 

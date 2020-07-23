@@ -27,7 +27,6 @@
   <ItemGroup>
     <Folder Include="Initial\" />
     <Folder Include="Interfaces\" />
-    <Folder Include="Utilities\" />
     <Folder Include="Services\" />
     <Folder Include="Views\Templates\" />
   </ItemGroup>

@@ -4,18 +4,29 @@ using System.Text;
 using FridgeIt.Persistence;
 using System.Threading.Tasks;
 using Xamarin.Essentials;
+using FridgeIt.Models;
+using System.ComponentModel;
+using System.Collections.ObjectModel;
 
 namespace FridgeIt.ViewModels
 {
     class DashboardPageViewModel
     {
         #region Variables 
-        private string Token_userEmail = "token_userEmail";
         private Token _token = new Token();
+
+        public ObservableCollection<GroceryItem> dashboardWatchList=new ObservableCollection<GroceryItem>();
+
         #endregion
 
         #region Properties 
-
+        public ObservableCollection<GroceryItem> DashboardWatchList
+        {
+            get { 
+                return dashboardWatchList; 
+                }
+            
+        }
         public string LabelUsername
         {
             get
@@ -31,21 +42,23 @@ namespace FridgeIt.ViewModels
 
         #region Constructor
             public DashboardPageViewModel()
-            { 
-                
+            {
+            PopulateWatchList();
             }
         #endregion
 
         #region Functions
-        private async Task<(string userEmail, string userPassword)> GetTokenCredentials()
+        private void PopulateWatchList()
         {
-            string userEmail = null;
-            string userPassword = null;
+            GroceryItem a = new GroceryItem {Description="Apples",ImageURL= "apple.jpg" };
 
-            userEmail = await SecureStorage.GetAsync("token_userEmail");
-            userPassword = await SecureStorage.GetAsync("token_userPassword");
+            GroceryItem b= new GroceryItem { Description = "Soda", ImageURL = "soda.jpg" };
+            dashboardWatchList.Clear();
+            dashboardWatchList.Add(a);
+            dashboardWatchList.Add(b);
+            
 
-            return (userEmail, userPassword);
+
         }
         #endregion
 

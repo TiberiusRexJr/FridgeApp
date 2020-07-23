@@ -1,10 +1,6 @@
 {
   "version": 2,
-<<<<<<< HEAD
-  "dgSpecHash": "Bxrv8H9Z6/BCrMr2P3csi14zouy4ALqGPdB++DmSzgn40nIHPvKQoZGNN6PMoRDh6XDkfyth/69iFs5a/LvsXQ==",
-=======
   "dgSpecHash": "IuFPL/ANBN3yaLIuUGmOjuwPy7ktqVJfppTS5T9z/J3bNHLOT3dYMZAUfRqox7wX7zwwkoLf8H+OdthyB1erhA==",
->>>>>>> RefinementPersistenceCentralization
   "success": true,
   "projectFilePath": "C:\\Users\\rouni\\Desktop\\FridgeApp\\ETech.Apps.FridgeIt\\FridgeIt\\FridgeIt.Android\\FridgeIt.Android.csproj",
   "expectedPackageFiles": [

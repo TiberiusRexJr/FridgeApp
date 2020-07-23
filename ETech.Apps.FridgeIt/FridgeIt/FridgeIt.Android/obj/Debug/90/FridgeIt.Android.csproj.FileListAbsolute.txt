@@ -507,3 +507,8 @@ C:\Users\rouni\Desktop\FridgeApp\ETech.Apps.FridgeIt\FridgeIt\FridgeIt.Android\o
 C:\Users\rouni\Desktop\FridgeApp\ETech.Apps.FridgeIt\FridgeIt\FridgeIt.Android\obj\Debug\90\stamp\_GenerateJavaStubs.stamp
 C:\Users\rouni\Desktop\FridgeApp\ETech.Apps.FridgeIt\FridgeIt\FridgeIt.Android\obj\Debug\90\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\rouni\Desktop\FridgeApp\ETech.Apps.FridgeIt\FridgeIt\FridgeIt.Android\obj\Debug\90\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\rouni\Desktop\FridgeApp\ETech.Apps.FridgeIt\FridgeIt\FridgeIt.Android\obj\Debug\90\res\drawable\a.jpeg
+C:\Users\rouni\Desktop\FridgeApp\ETech.Apps.FridgeIt\FridgeIt\FridgeIt.Android\obj\Debug\90\res\drawable\larkin.jpg
+C:\Users\rouni\Desktop\FridgeApp\ETech.Apps.FridgeIt\FridgeIt\FridgeIt.Android\obj\Debug\90\res\drawable\vanity.jpg
+C:\Users\rouni\Desktop\FridgeApp\ETech.Apps.FridgeIt\FridgeIt\FridgeIt.Android\obj\Debug\90\res\drawable\apple.jpg
+C:\Users\rouni\Desktop\FridgeApp\ETech.Apps.FridgeIt\FridgeIt\FridgeIt.Android\obj\Debug\90\res\drawable\soda.jpg

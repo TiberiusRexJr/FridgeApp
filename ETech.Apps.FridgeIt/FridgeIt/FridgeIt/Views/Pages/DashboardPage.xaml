@@ -3,16 +3,70 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:fontawesome="clr-namespace:FontAwesome"
              mc:Ignorable="d"
              x:Class="FridgeIt.Views.Pages.DashboardPage"
              Title="Dashboard"
              
              >
-    <Grid Margin="5">
-        <Image Source="xamarin_logo.png">
-            
-        </Image>
-        <Label Text="{Binding LabelUsername}" TextColor="BlueViolet"></Label>
-    </Grid>
+    <ScrollView>
+        <Grid Padding="0,0,0,0" Margin="0,0,0,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"   ></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+
+            </Grid.RowDefinitions>
+            <!--<Image Source="d.jpeg" Aspect="AspectFit" HorizontalOptions="Fill" BackgroundColor="Black" Grid.Row="0" Grid.Column="0"></Image>-->
+            <Label Grid.Row="0" Grid.Column="0"   Text="{x:Static fontawesome:FontAwesomeIcons.Android}" FontSize="Title" FontFamily="{StaticResource FontAwesomeBrands}"></Label>
+            <Label  Text="{Binding LabelUsername}" FontSize="Title"  TextColor="BlueViolet" Grid.Row="0" Grid.Column="1"  ></Label>
+
+            <Label Text="{x:Static fontawesome:FontAwesomeIcons.Eye}"  Grid.Row="1" Grid.RowSpan="1" Grid.ColumnSpan="2" Grid.Column="0" FontSize="Title" FontFamily="{StaticResource FontAwesomeRegular}"></Label>
+            <Label Text="My Watch List" Grid.Row="1" Grid.Column="1" FontSize="Title" FontFamily="{StaticResource FontAwesomeRegular}"></Label>
+
+            <CarouselView Grid.Row="2" Grid.Column="0" Grid.RowSpan="1" VerticalOptions="FillAndExpand"   Grid.ColumnSpan="4" ItemsSource="{Binding DashboardWatchList }"   BackgroundColor="Aquamarine">
+                <CarouselView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout Grid.Column="0" Grid.Row="3" Grid.RowSpan="2">
+
+                            <!--<Frame HasShadow="True"
+                               BorderColor="Red"
+                               CornerRadius="4"
+                               Margin="20"
+                               HeightRequest="150"
+                               HorizontalOptions="Center"
+                               VerticalOptions="CenterAndExpand">
+
+                             </Frame>-->
+                            <StackLayout>
+                                <Label Text="{Binding Description}" 
+                                       FontAttributes="Bold"
+                                       FontSize="Large"
+                                       HorizontalOptions="Center"
+                                       VerticalOptions="Center"
+                                       >
+                                    
+                                </Label>
+                                <Image Source="{Binding ImageURL}"
+                                       Aspect="AspectFill"
+                                       HeightRequest="200"
+                                       WidthRequest="200"
+                                       HorizontalOptions="Center"
+                                       >
+                                    
+                                </Image>
+                            </StackLayout>
+                            
+                        </StackLayout>
+                                       </DataTemplate>
+                </CarouselView.ItemTemplate>
+            </CarouselView>
+
+            <Label Text="{x:Static fontawesome:FontAwesomeIcons.Hospital}"  Grid.Row="3" Grid.Column="0" FontSize="Title" FontFamily="{StaticResource FontAwesomeRegular}"></Label>
+            <Label Text="My Watch List" Grid.Row="3" Grid.Column="1" FontSize="Title" FontFamily="{StaticResource FontAwesomeRegular}"></Label>
+        </Grid>
+    </ScrollView>
+         
    
 </ContentPage>

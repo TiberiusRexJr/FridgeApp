@@ -22,6 +22,7 @@ namespace FridgeIt.Persistence
                 get{
                 return Token_userEmail;
                     }
+                
             }
         public string TokenUserPassword
         {
@@ -29,6 +30,7 @@ namespace FridgeIt.Persistence
             {
                 return Token_userPassword;
             }
+            
         }
             
             
@@ -43,6 +45,10 @@ namespace FridgeIt.Persistence
         #endregion
 
         #region Functions
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
         public async Task<(string userEmail, string userPassword)> GetTokenCredentials()
         {
             string userEmail = null;
@@ -53,6 +59,15 @@ namespace FridgeIt.Persistence
             userPassword = await SecureStorage.GetAsync(TokenUserPassword);
 
             return (userEmail, userPassword);
+        }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        public async void SetTokenCredentials(string userEmail,string userPassword)
+        {
+            await SecureStorage.SetAsync(TokenUserEmail, userEmail);
+            await SecureStorage.SetAsync(TokenUserPassword, userPassword);
         }
         #endregion
     }

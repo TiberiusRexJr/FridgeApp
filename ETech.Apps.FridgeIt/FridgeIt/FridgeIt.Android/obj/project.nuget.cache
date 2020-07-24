@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "IuFPL/ANBN3yaLIuUGmOjuwPy7ktqVJfppTS5T9z/J3bNHLOT3dYMZAUfRqox7wX7zwwkoLf8H+OdthyB1erhA==",
+  "dgSpecHash": "cAqNZWLIVf+69Axz1dq2ThpmqQe1Hz1UF/VU6QTCa1jc2USHHPJI0HrZeZE0rLcGojlkWuICLPrRZU7ytDQZRQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\rouni\\Desktop\\FridgeApp\\ETech.Apps.FridgeIt\\FridgeIt\\FridgeIt.Android\\FridgeIt.Android.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\rouni\\.nuget\\packages\\fastandroidcamera\\2.0.0\\fastandroidcamera.2.0.0.nupkg.sha512",
     "C:\\Users\\rouni\\.nuget\\packages\\microcharts\\0.7.1\\microcharts.0.7.1.nupkg.sha512",
     "C:\\Users\\rouni\\.nuget\\packages\\microcharts.forms\\0.7.1\\microcharts.forms.0.7.1.nupkg.sha512",
     "C:\\Users\\rouni\\.nuget\\packages\\skiasharp\\1.59.1\\skiasharp.1.59.1.nupkg.sha512",
@@ -56,7 +57,9 @@
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.android.support.versionedparcelable\\28.0.0.3\\xamarin.android.support.versionedparcelable.28.0.0.3.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.android.support.viewpager\\28.0.0.3\\xamarin.android.support.viewpager.28.0.0.3.nupkg.sha512",
     "C:\\Users\\rouni\\.nuget\\packages\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
-    "C:\\Users\\rouni\\.nuget\\packages\\xamarin.forms\\4.5.0.495\\xamarin.forms.4.5.0.495.nupkg.sha512"
+    "C:\\Users\\rouni\\.nuget\\packages\\xamarin.forms\\4.5.0.495\\xamarin.forms.4.5.0.495.nupkg.sha512",
+    "C:\\Users\\rouni\\.nuget\\packages\\zxing.net.mobilex\\3.0.1\\zxing.net.mobilex.3.0.1.nupkg.sha512",
+    "C:\\Users\\rouni\\.nuget\\packages\\zxing.net.mobilex.forms\\3.0.1\\zxing.net.mobilex.forms.3.0.1.nupkg.sha512"
   ],
   "logs": []
 }

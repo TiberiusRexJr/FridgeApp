@@ -74,6 +74,9 @@ namespace FridgeIt.Views
                 case "Settings":
                     pagetype = typeof(SettingsPage);
                     break;
+                case "Add Item":
+                    pagetype = typeof(AddItemPage);
+                    break;
                 default:
                     pagetype = typeof(LoginPage);
                     break;

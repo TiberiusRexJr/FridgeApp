@@ -276,6 +276,34 @@
           "build/Xamarin.Forms.props": {},
           "build/Xamarin.Forms.targets": {}
         }
+      },
+      "ZXing.Net.MobileX/3.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Essentials": "1.5.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/ZXingNetMobile.dll": {},
+          "lib/netstandard2.0/zxing.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/ZXingNetMobile.dll": {},
+          "lib/netstandard2.0/zxing.dll": {}
+        }
+      },
+      "ZXing.Net.MobileX.Forms/3.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Essentials": "1.5.1",
+          "Xamarin.Forms": "4.5.0.356",
+          "ZXing.Net.MobileX": "3.0.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/ZXing.Net.Mobile.Forms.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/ZXing.Net.Mobile.Forms.dll": {}
+        }
       }
     }
   },
@@ -1098,6 +1126,69 @@
         "xamarin.forms.4.5.0.495.nupkg.sha512",
         "xamarin.forms.nuspec"
       ]
+    },
+    "ZXing.Net.MobileX/3.0.1": {
+      "sha512": "Sd92s64STKBRAAXW2sQeSIa/REjs76mS011d4kt3qaEWrDO61j01CQeAb+cwvYON4cSUAUX3NnDgnb69KxfU6w==",
+      "type": "package",
+      "path": "zxing.net.mobilex/3.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/monoandroid10.0/ZXingNetMobile.dll",
+        "lib/monoandroid10.0/ZXingNetMobile.pdb",
+        "lib/monoandroid10.0/zxing.dll",
+        "lib/monoandroid90/ZXingNetMobile.dll",
+        "lib/monoandroid90/ZXingNetMobile.pdb",
+        "lib/monoandroid90/zxing.dll",
+        "lib/netstandard2.0/ZXingNetMobile.dll",
+        "lib/netstandard2.0/ZXingNetMobile.pdb",
+        "lib/netstandard2.0/zxing.dll",
+        "lib/tizen40/ZXingNetMobile.dll",
+        "lib/tizen40/ZXingNetMobile.pdb",
+        "lib/tizen40/zxing.dll",
+        "lib/uap10.0.16299/ZXingNetMobile.dll",
+        "lib/uap10.0.16299/ZXingNetMobile.pdb",
+        "lib/uap10.0.16299/ZXingNetMobile.pri",
+        "lib/uap10.0.16299/ZXingNetMobile/ScanPage.xaml",
+        "lib/uap10.0.16299/ZXingNetMobile/ZXingNetMobile.xr.xml",
+        "lib/uap10.0.16299/ZXingNetMobile/ZXingScannerControl.xaml",
+        "lib/uap10.0.16299/zxing.dll",
+        "lib/xamarinios10/ZXingNetMobile.dll",
+        "lib/xamarinios10/ZXingNetMobile.pdb",
+        "lib/xamarinios10/zxing.dll",
+        "lib/xamarinmac20/ZXingNetMobile.dll",
+        "lib/xamarinmac20/ZXingNetMobile.pdb",
+        "lib/xamarinmac20/zxing.dll",
+        "zxing.net.mobilex.3.0.1.nupkg.sha512",
+        "zxing.net.mobilex.nuspec"
+      ]
+    },
+    "ZXing.Net.MobileX.Forms/3.0.1": {
+      "sha512": "OxDKJag5Rt8Rhki4ukKiw2lx29kA+9fNxOzPoRJEgasuuNE9eMjrmX+yAYdhEPJN8qV7NOk06BH82DURz3KNFQ==",
+      "type": "package",
+      "path": "zxing.net.mobilex.forms/3.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/monoandroid10.0/ZXing.Net.Mobile.Forms.dll",
+        "lib/monoandroid10.0/ZXing.Net.Mobile.Forms.pdb",
+        "lib/monoandroid90/ZXing.Net.Mobile.Forms.dll",
+        "lib/monoandroid90/ZXing.Net.Mobile.Forms.pdb",
+        "lib/netstandard2.0/ZXing.Net.Mobile.Forms.dll",
+        "lib/netstandard2.0/ZXing.Net.Mobile.Forms.pdb",
+        "lib/tizen40/ZXing.Net.Mobile.Forms.dll",
+        "lib/tizen40/ZXing.Net.Mobile.Forms.pdb",
+        "lib/uap10.0.16299/ZXing.Net.Mobile.Forms.dll",
+        "lib/uap10.0.16299/ZXing.Net.Mobile.Forms.pdb",
+        "lib/xamarinios10/ZXing.Net.Mobile.Forms.dll",
+        "lib/xamarinios10/ZXing.Net.Mobile.Forms.pdb",
+        "lib/xamarinmac20/ZXing.Net.Mobile.Forms.dll",
+        "lib/xamarinmac20/ZXing.Net.Mobile.Forms.pdb",
+        "zxing.net.mobilex.forms.3.0.1.nupkg.sha512",
+        "zxing.net.mobilex.forms.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
@@ -1107,6 +1198,7 @@
       "NETStandard.Library >= 2.0.3",
       "Xamarin.Essentials >= 1.5.3.2",
       "Xamarin.Forms >= 4.5.0.495",
+      "ZXing.Net.MobileX.Forms >= 3.0.1",
       "sqlite-net-pcl >= 1.7.335"
     ]
   },
@@ -1173,6 +1265,10 @@
           "Xamarin.Forms": {
             "target": "Package",
             "version": "[4.5.0.495, )"
+          },
+          "ZXing.Net.MobileX.Forms": {
+            "target": "Package",
+            "version": "[3.0.1, )"
           },
           "sqlite-net-pcl": {
             "target": "Package",

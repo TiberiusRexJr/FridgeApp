@@ -38,7 +38,9 @@ namespace FridgeIt.Views
                     new NavigationMenuMasterMenuItem { Id = 2, Title = "My Fridge Trends" },
                     new NavigationMenuMasterMenuItem { Id = 3, Title = "Log In" },
                     new NavigationMenuMasterMenuItem { Id = 4, Title = "Register" },
-                    new NavigationMenuMasterMenuItem{Id=5, Title="Settings"}
+                    new NavigationMenuMasterMenuItem{Id=5, Title="Settings"},
+                    new NavigationMenuMasterMenuItem{Id=5, Title="Add Item"}
+
                 });
             }
 

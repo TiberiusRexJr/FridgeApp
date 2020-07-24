@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 using FridgeIt.Views;
+using FridgeIt.Persistence;
 using System.ComponentModel;
 
 namespace FridgeIt.ViewModels
@@ -22,6 +23,8 @@ namespace FridgeIt.ViewModels
         public string Password { get; set; }
         public string labelErrorResponse { get; set; }
         public bool labelErrorResponseIsVisible { get; set; }
+
+        Token token = new Token();
 
         public event PropertyChangedEventHandler PropertyChanged;
 
@@ -80,12 +83,11 @@ namespace FridgeIt.ViewModels
                 LabelErrorResponse = "Email already in use, please try again";
                 
                 LabelErrorResponseIsVisible = true;
-                App.Current.MainPage.DisplayAlert("SystemAlert", status.ToString(), "Ok");
 
             }
             else
             {
-
+                token.SetTokenCredentials(user.userEmail, user.userPassword);
                 LabelErrorResponseIsVisible = false;
                 App.Current.MainPage.DisplayAlert("SystemAlert", user.userEmail + "Successfully Registered", "Ok");
                 App.Current.MainPage = new NavigationPage(new NavigationMenu("Dashboard"));

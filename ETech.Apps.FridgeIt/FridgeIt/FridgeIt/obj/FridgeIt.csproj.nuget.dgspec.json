@@ -64,6 +64,10 @@
               "target": "Package",
               "version": "[4.5.0.495, )"
             },
+            "ZXing.Net.MobileX.Forms": {
+              "target": "Package",
+              "version": "[3.0.1, )"
+            },
             "sqlite-net-pcl": {
               "target": "Package",
               "version": "[1.7.335, )"

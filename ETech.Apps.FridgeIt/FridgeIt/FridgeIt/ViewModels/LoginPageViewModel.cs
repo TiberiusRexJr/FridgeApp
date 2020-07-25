@@ -131,7 +131,7 @@ namespace FridgeIt.ViewModels
                 await SecureStorage.SetAsync(_token.TokenUserEmail, UserEmail);
                 await SecureStorage.SetAsync(_token.TokenUserPassword, UserPassword);
                 LabelLoginFailedIsVisible = false;
-                App.Current.MainPage = new NavigationMenu("Dashboard");
+                App.Current.MainPage = new NavigationMenu("Settings");
             
             }
             else

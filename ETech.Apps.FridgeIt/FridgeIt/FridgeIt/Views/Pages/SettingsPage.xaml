@@ -9,6 +9,7 @@
     <StackLayout>
         <Label Text="Settigs"></Label>
         <Grid>
+            <Label  Text="{Binding LabelUsername}" FontSize="Title"  TextColor="BlueViolet" Grid.Row="0" Grid.Column="1"  ></Label>
             <Label x:Name="LabelKeepMeLoggedIn" Text="Keep Me Logged In" TextColor="Blue" ></Label>
             <Switch x:Name="SwitchKeepMeLoggedI" IsToggled="{Binding SwitchKeepMeLoggedIn}"></Switch>
         </Grid>

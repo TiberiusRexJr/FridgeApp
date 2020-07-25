@@ -15,6 +15,7 @@ namespace FridgeIt.ViewModels
         private string token_userPassword;
         private string token_userEmail;
 
+        private Token _userToken = new Token();
         private string preferences_keepMeLoggedIn = "preferences_keep_me_logged_in";
         #endregion
 
@@ -29,6 +30,15 @@ namespace FridgeIt.ViewModels
                  return Preferences.Get(preferences_keepMeLoggedIn, false);
 
                 }
+        }
+        public string LabelUsername
+        {
+            get 
+            {
+                var credentials = _userToken.GetTokenCredentials();
+
+                return credentials.Result.userEmail;
+            }
         }
         #endregion
 

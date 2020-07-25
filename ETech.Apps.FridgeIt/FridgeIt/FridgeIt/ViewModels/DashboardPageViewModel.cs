@@ -50,9 +50,9 @@ namespace FridgeIt.ViewModels
         #region Functions
         private void PopulateWatchList()
         {
-            GroceryItem a = new GroceryItem {Description="Apples",ImageURL= "apple.jpg" };
+            GroceryItem a = new GroceryItem {Description="Apples"};
 
-            GroceryItem b= new GroceryItem { Description = "Soda", ImageURL = "soda.jpg" };
+            GroceryItem b= new GroceryItem { Description = "Soda"};
             dashboardWatchList.Clear();
             dashboardWatchList.Add(a);
             dashboardWatchList.Add(b);

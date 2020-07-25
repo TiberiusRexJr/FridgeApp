@@ -20,3 +20,4 @@ C:\Users\rouni\Desktop\FridgeApp\ETech.Apps.FridgeIt\FridgeIt\FridgeIt\obj\Debug
 C:\Users\rouni\Desktop\FridgeApp\ETech.Apps.FridgeIt\FridgeIt\FridgeIt\obj\Debug\netstandard2.0\FridgeIt.csproj.CoreCompileInputs.cache
 C:\Users\rouni\Desktop\FridgeApp\ETech.Apps.FridgeIt\FridgeIt\FridgeIt\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Users\rouni\Desktop\FridgeApp\ETech.Apps.FridgeIt\FridgeIt\FridgeIt\obj\Debug\netstandard2.0\Views\AddItemPage.xaml.g.cs
+C:\Users\rouni\Desktop\FridgeApp\ETech.Apps.FridgeIt\FridgeIt\FridgeIt\obj\Debug\netstandard2.0\FridgeIt.csprojAssemblyReference.cache

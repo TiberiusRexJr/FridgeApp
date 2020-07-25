@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Text;
 using Xamarin.Forms;
+using ZXing;
+using ZXing.Mobile;
 using ZXing.Net.Mobile.Forms;
 
 namespace FridgeIt.ViewModels
@@ -11,6 +13,7 @@ namespace FridgeIt.ViewModels
         #region Variables
          public Command commandScanButtonClicked;
         string labelUPC;
+        ZXingScannerPage scanPage;
         #endregion
         #region Properties
         #endregion
@@ -40,23 +43,25 @@ namespace FridgeIt.ViewModels
 
         private async void Button_Scan_Clicked(object sender)
         {
-            await App.Current.MainPage.DisplayAlert("ok", "ok", "ok");
-            //scan object
-            var scan = new ZXingScannerPage();
-            //push to scan page
-            await Navigation.PushAsync(scan);
-            //on result event, after image is taken
-            //attach += function return
-            scan.OnScanResult += (result) =>
+
+            scanPage = new ZXingScannerPage();
+            scanPage.OnScanResult += (Result) =>
               {
-                  Device.BeginInvokeOnMainThread(async () =>
+                  scanPage.IsScanning = false;
+
+                  Device.BeginInvokeOnMainThread(() => 
                   {
-                      await Navigation.PopAsync();
-                      LabelUPC = result.Text;
+                      LabelUPC = Result.Text;
+
+                      Navigation.PopModalAsync();
+                      App.Current.MainPage.DisplayAlert("SCanned Barcode", LabelUPC, "ok");
                   });
               };
+
+            await Navigation.PushAsync(scanPage);
+
         }
         
-        #endregion
+#endregion
     }
 }

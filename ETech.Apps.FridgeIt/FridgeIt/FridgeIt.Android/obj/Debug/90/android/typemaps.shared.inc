@@ -27482,13 +27482,13 @@
 	.section	.rodata.java_type_name.4580,"aMS",@progbits,1
 	.type	.L.java_type_name.4580, @object
 .L.java_type_name.4580:
-	.asciz	"crc64177c89b4d112e17b/ZXingBarcodeImageViewRenderer"
+	.asciz	"crc6427ea3917517e908b/ZXingBarcodeImageViewRenderer"
 	.size	.L.java_type_name.4580, 52
 
 	.section	.rodata.java_type_name.4581,"aMS",@progbits,1
 	.type	.L.java_type_name.4581, @object
 .L.java_type_name.4581:
-	.asciz	"crc64177c89b4d112e17b/ZXingScannerViewRenderer"
+	.asciz	"crc6427ea3917517e908b/ZXingScannerViewRenderer"
 	.size	.L.java_type_name.4581, 47
 
 	.section	.rodata.java_type_name.4582,"aMS",@progbits,1
@@ -28610,20 +28610,20 @@
 	.section	.rodata.java_type_name.4768,"aMS",@progbits,1
 	.type	.L.java_type_name.4768, @object
 .L.java_type_name.4768:
-	.asciz	"crc6480997b3ef81bf9b2/ZXingScannerFragment"
-	.size	.L.java_type_name.4768, 43
+	.asciz	"crc6480997b3ef81bf9b2/ActivityLifecycleContextListener"
+	.size	.L.java_type_name.4768, 55
 
 	.section	.rodata.java_type_name.4769,"aMS",@progbits,1
 	.type	.L.java_type_name.4769, @object
 .L.java_type_name.4769:
-	.asciz	"crc6480997b3ef81bf9b2/ZXingSurfaceView"
-	.size	.L.java_type_name.4769, 39
+	.asciz	"crc6480997b3ef81bf9b2/ZXingScannerFragment"
+	.size	.L.java_type_name.4769, 43
 
 	.section	.rodata.java_type_name.4770,"aMS",@progbits,1
 	.type	.L.java_type_name.4770, @object
 .L.java_type_name.4770:
-	.asciz	"crc6480997b3ef81bf9b2/ZXingSurfaceView_PixelCopyListener"
-	.size	.L.java_type_name.4770, 57
+	.asciz	"crc6480997b3ef81bf9b2/ZXingSurfaceView"
+	.size	.L.java_type_name.4770, 39
 
 	.section	.rodata.java_type_name.4771,"aMS",@progbits,1
 	.type	.L.java_type_name.4771, @object
@@ -79154,18 +79154,18 @@
 	.section	.rodata.managed_type_name.7191,"aMS",@progbits,1
 	.type	.L.managed_type_name.7191, @object
 .L.managed_type_name.7191:
-	.asciz	"ZXing.Mobile.CameraAccess.CameraEventsListener, ZXingNetMobile"
-	.size	.L.managed_type_name.7191, 63
+	.asciz	"ZXing.Mobile.ActivityLifecycleContextListener, ZXingNetMobile"
+	.size	.L.managed_type_name.7191, 62
 	.section	.rodata.managed_type_name.7192,"aMS",@progbits,1
 	.type	.L.managed_type_name.7192, @object
 .L.managed_type_name.7192:
-	.asciz	"ZXing.Mobile.ZXingScannerFragment, ZXingNetMobile"
-	.size	.L.managed_type_name.7192, 50
+	.asciz	"ZXing.Mobile.CameraAccess.CameraEventsListener, ZXingNetMobile"
+	.size	.L.managed_type_name.7192, 63
 	.section	.rodata.managed_type_name.7193,"aMS",@progbits,1
 	.type	.L.managed_type_name.7193, @object
 .L.managed_type_name.7193:
-	.asciz	"ZXing.Mobile.ZXingSurfaceView+PixelCopyListener, ZXingNetMobile"
-	.size	.L.managed_type_name.7193, 64
+	.asciz	"ZXing.Mobile.ZXingScannerFragment, ZXingNetMobile"
+	.size	.L.managed_type_name.7193, 50
 	.section	.rodata.managed_type_name.7194,"aMS",@progbits,1
 	.type	.L.managed_type_name.7194, @object
 .L.managed_type_name.7194:
@@ -79184,11 +79184,11 @@
 	.section	.rodata.managed_type_name.7197,"aMS",@progbits,1
 	.type	.L.managed_type_name.7197, @object
 .L.managed_type_name.7197:
-	.asciz	"ZXing.Net.Mobile.Forms.Android.ZXingBarcodeImageViewRenderer, ZXing.Net.Mobile.Forms"
-	.size	.L.managed_type_name.7197, 85
+	.asciz	"ZXing.Net.Mobile.Forms.Android.ZXingBarcodeImageViewRenderer, ZXing.Net.Mobile.Forms.Android"
+	.size	.L.managed_type_name.7197, 93
 	.section	.rodata.managed_type_name.7198,"aMS",@progbits,1
 	.type	.L.managed_type_name.7198, @object
 .L.managed_type_name.7198:
-	.asciz	"ZXing.Net.Mobile.Forms.Android.ZXingScannerViewRenderer, ZXing.Net.Mobile.Forms"
-	.size	.L.managed_type_name.7198, 80
+	.asciz	"ZXing.Net.Mobile.Forms.Android.ZXingScannerViewRenderer, ZXing.Net.Mobile.Forms.Android"
+	.size	.L.managed_type_name.7198, 88
 	/* Managed type names: END */

@@ -1,15 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "NvkZF7jGB2HqHtS0jdrbRXcwYCvBQajQ37ACmFqOcollieFA5ljLfz/9GL2CpUf8oBa4Hureh2C6KXTQZKUDNw==",
+  "dgSpecHash": "ggWNPZrI+D7NxIfOSSDzci6rHkJ+b1mp61jBeM6aOqxVEQ1exlj4zIy0cvY6L/pdZxbu/dXfWw3sWyIPr9rlqA==",
   "success": true,
   "projectFilePath": "C:\\Users\\rouni\\Desktop\\FridgeApp\\ETech.Apps.FridgeIt\\FridgeIt\\FridgeIt\\FridgeIt.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\rouni\\.nuget\\packages\\microcharts\\0.7.1\\microcharts.0.7.1.nupkg.sha512",
-    "C:\\Users\\rouni\\.nuget\\packages\\microcharts.forms\\0.7.1\\microcharts.forms.0.7.1.nupkg.sha512",
+    "C:\\Users\\rouni\\.nuget\\packages\\microcharts\\0.9.0\\microcharts.0.9.0.nupkg.sha512",
+    "C:\\Users\\rouni\\.nuget\\packages\\microcharts.forms\\0.9.1\\microcharts.forms.0.9.1.nupkg.sha512",
     "C:\\Users\\rouni\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\rouni\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
-    "C:\\Users\\rouni\\.nuget\\packages\\skiasharp\\1.59.1\\skiasharp.1.59.1.nupkg.sha512",
-    "C:\\Users\\rouni\\.nuget\\packages\\skiasharp.views.forms\\1.59.1.1\\skiasharp.views.forms.1.59.1.1.nupkg.sha512",
+    "C:\\Users\\rouni\\.nuget\\packages\\skiasharp\\2.80.1\\skiasharp.2.80.1.nupkg.sha512",
+    "C:\\Users\\rouni\\.nuget\\packages\\skiasharp.views.forms\\2.80.1\\skiasharp.views.forms.2.80.1.nupkg.sha512",
     "C:\\Users\\rouni\\.nuget\\packages\\sqlite-net-pcl\\1.7.335\\sqlite-net-pcl.1.7.335.nupkg.sha512",
     "C:\\Users\\rouni\\.nuget\\packages\\sqlitepclraw.bundle_green\\2.0.3\\sqlitepclraw.bundle_green.2.0.3.nupkg.sha512",
     "C:\\Users\\rouni\\.nuget\\packages\\sqlitepclraw.core\\2.0.3\\sqlitepclraw.core.2.0.3.nupkg.sha512",
@@ -19,11 +19,11 @@
     "C:\\Users\\rouni\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
     "C:\\Users\\rouni\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\rouni\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
-    "C:\\Users\\rouni\\.nuget\\packages\\system.valuetuple\\4.4.0\\system.valuetuple.4.4.0.nupkg.sha512",
+    "C:\\Users\\rouni\\.nuget\\packages\\system.valuetuple\\4.5.0\\system.valuetuple.4.5.0.nupkg.sha512",
     "C:\\Users\\rouni\\.nuget\\packages\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
-    "C:\\Users\\rouni\\.nuget\\packages\\xamarin.forms\\4.5.0.495\\xamarin.forms.4.5.0.495.nupkg.sha512",
-    "C:\\Users\\rouni\\.nuget\\packages\\zxing.net.mobilex\\3.0.1\\zxing.net.mobilex.3.0.1.nupkg.sha512",
-    "C:\\Users\\rouni\\.nuget\\packages\\zxing.net.mobilex.forms\\3.0.1\\zxing.net.mobilex.forms.3.0.1.nupkg.sha512"
+    "C:\\Users\\rouni\\.nuget\\packages\\xamarin.forms\\4.7.0.1179\\xamarin.forms.4.7.0.1179.nupkg.sha512",
+    "C:\\Users\\rouni\\.nuget\\packages\\zxing.net.mobile\\2.4.1\\zxing.net.mobile.2.4.1.nupkg.sha512",
+    "C:\\Users\\rouni\\.nuget\\packages\\zxing.net.mobile.forms\\2.4.1\\zxing.net.mobile.forms.2.4.1.nupkg.sha512"
   ],
   "logs": []
 }

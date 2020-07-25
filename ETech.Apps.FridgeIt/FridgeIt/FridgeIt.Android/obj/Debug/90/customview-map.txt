@@ -34,6 +34,7 @@ LinearLayout;C:\Users\rouni\Desktop\FridgeApp\ETech.Apps.FridgeIt\FridgeIt\Fridg
 paths;C:\Users\rouni\Desktop\FridgeApp\ETech.Apps.FridgeIt\FridgeIt\FridgeIt.Android\obj\Debug\90\lp\44\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
 resources;C:\Users\rouni\Desktop\FridgeApp\ETech.Apps.FridgeIt\FridgeIt\FridgeIt.Android\obj\Debug\90\lp\2\jl\res\values\strings.xml
 resources;C:\Users\rouni\Desktop\FridgeApp\ETech.Apps.FridgeIt\FridgeIt\FridgeIt.Android\obj\Debug\90\lp\45\jl\res\values\styles.xml
+resources;C:\Users\rouni\Desktop\FridgeApp\ETech.Apps.FridgeIt\FridgeIt\FridgeIt.Android\obj\Debug\90\lp\47\jl\res\values\strings.xml
 resources;obj\Debug\90\res\values\colors.xml
 resources;obj\Debug\90\res\values\styles.xml
 set;C:\Users\rouni\Desktop\FridgeApp\ETech.Apps.FridgeIt\FridgeIt\FridgeIt.Android\obj\Debug\90\lp\45\jl\res\anim\enterfromleft.xml
@@ -41,6 +42,7 @@ set;C:\Users\rouni\Desktop\FridgeApp\ETech.Apps.FridgeIt\FridgeIt\FridgeIt.Andro
 set;C:\Users\rouni\Desktop\FridgeApp\ETech.Apps.FridgeIt\FridgeIt\FridgeIt.Android\obj\Debug\90\lp\45\jl\res\anim\exittoleft.xml
 set;C:\Users\rouni\Desktop\FridgeApp\ETech.Apps.FridgeIt\FridgeIt\FridgeIt.Android\obj\Debug\90\lp\45\jl\res\anim\exittoright.xml
 string;C:\Users\rouni\Desktop\FridgeApp\ETech.Apps.FridgeIt\FridgeIt\FridgeIt.Android\obj\Debug\90\lp\2\jl\res\values\strings.xml
+string;C:\Users\rouni\Desktop\FridgeApp\ETech.Apps.FridgeIt\FridgeIt\FridgeIt.Android\obj\Debug\90\lp\47\jl\res\values\strings.xml
 style;C:\Users\rouni\Desktop\FridgeApp\ETech.Apps.FridgeIt\FridgeIt\FridgeIt.Android\obj\Debug\90\lp\45\jl\res\values\styles.xml
 style;obj\Debug\90\res\values\styles.xml
 translate;C:\Users\rouni\Desktop\FridgeApp\ETech.Apps.FridgeIt\FridgeIt\FridgeIt.Android\obj\Debug\90\lp\45\jl\res\anim\enterfromleft.xml

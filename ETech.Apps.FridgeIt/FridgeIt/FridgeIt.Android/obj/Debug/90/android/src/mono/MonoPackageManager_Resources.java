@@ -59,8 +59,10 @@ public class MonoPackageManager_Resources {
 		"Xamarin.Forms.Platform.Android.dll",
 		"Xamarin.Forms.Platform.dll",
 		"Xamarin.Forms.Xaml.dll",
-		"zxing.dll",
+		"ZXing.Net.Mobile.Core.dll",
+		"ZXing.Net.Mobile.Forms.Android.dll",
 		"ZXing.Net.Mobile.Forms.dll",
+		"zxing.portable.dll",
 		"ZXingNetMobile.dll",
 	};
 	public static String[] Dependencies = new String[]{

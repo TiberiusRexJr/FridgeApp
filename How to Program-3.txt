@@ -21,3 +21,4 @@ SOLUTION
 9. Don't be afraid, strike, commit.
 10. get into the ring from time to time, and just code. this is the true nature of programming, not just learning and practicing, to flow
 11. know what datatypes your logic is returning, null is not ===0, remember. know what your NUGET library functions are actually doing, returning save yourself some time asshole
+12. Angles, Devil in the details. Go over the turotial step by step again till you are certain. If you still fail, try another tutorial, angles.

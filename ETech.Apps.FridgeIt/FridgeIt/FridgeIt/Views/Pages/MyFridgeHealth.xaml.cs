@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-using Entry = Microcharts.Entry;
+using Entry = Microcharts.ChartEntry;
 
 namespace FridgeIt.Views
 {

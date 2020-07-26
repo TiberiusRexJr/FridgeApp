@@ -7,9 +7,10 @@
              Title="Add Item"
              x:Class="FridgeIt.Views.AddItemPage">
     <ContentPage.Content>
-        <StackLayout>
-            <Button Text="Scan" Command="{Binding CommandScanButtonClicked}"></Button>
+        <FlexLayout>
+            
+            <Button Text="Scan" x:Name="btnScan" ></Button>
             <Label Text="{Binding LabelUPC}"  TextColor="Coral"></Label>          
-        </StackLayout>
+        </FlexLayout>
     </ContentPage.Content>
 </ContentPage>

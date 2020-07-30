@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="FridgeIt.App">
+
+    <Application.Resources>
+        <ResourceDictionary>
+            <!--Global Styles-->
+            <Color x:Key="NavigationPrimary">#2196F3</Color>
+            <Style TargetType="NavigationPage">
+                <Setter Property="BarBackgroundColor" Value="{StaticResource NavigationPrimary}" />
+                <Setter Property="BarTextColor" Value="White" />
+            </Style>
+            <ControlTemplate x:Key="TemplateHeaderFooter">
+                <StackLayout>
+                    <Label BackgroundColor="DeepSkyBlue" Text="Header" VerticalOptions="Start"></Label>
+                    <ContentPresenter VerticalOptions="FillAndExpand"></ContentPresenter>
+                    <Label BackgroundColor="DeepSkyBlue" Text="Footer" VerticalOptions="End"></Label>
+                    <!--<Image BackgroundColor="DeepSkyBlue" Source="Resources/iconfridge.png" VerticalOptions="Start"/>-->
+                    
+                </StackLayout>
+            </ControlTemplate>
+            <OnPlatform x:TypeArguments="x:String"
+                        x:Key="FontAwesomeBrands">
+                <On Platform="Android"
+                     Value="FontAwesome5Brands.otf#Regular"></On>
+            </OnPlatform>
+            <OnPlatform x:TypeArguments="x:String"
+                        x:Key="FontAwesomeSolid">
+                <On Platform="Android"
+                     Value="FontAwesome5Solid.otf#Regular"></On>
+            </OnPlatform>
+            <OnPlatform x:TypeArguments="x:String"
+                        x:Key="FontAwesomeRegular">
+                <On Platform="Android"
+                     Value="FontAwesome5Regular.otf#Regular"></On>
+            </OnPlatform>
+            
+        </ResourceDictionary>
+    </Application.Resources>
+    
+</Application>

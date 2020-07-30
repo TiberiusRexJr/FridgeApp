@@ -1,0 +1,68 @@
+<ContentPage
+
+>
+<StackLayout>
+    <ListView x:Name="MenuItemsListView" ItemSource="{Binding MenuItems}">
+        <d:ListView.ItemSource>
+            <x:Array Type="{x:Type x:String}">
+            <x:String>Page1</x:String>
+        </d:ListView.ItemSource>
+    
+        <ListView.Header>
+            <Grid Backgroundcolor="hex">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <Label Grid.Column="1" Grid.Row="2" Text="AppName">
+                
+                </Label>
+            </Grid>
+        </ListView.Header>
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <StackLayout Padding="15,10" HorizontalOptions="ExpandandAndFill">
+                        <Label VerticalOption="FillAndExpand" Text={Binding Title} d:Text="{Binding."} FontSize="24">
+                        
+                        </Label>
+
+                    </StackLayout>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+    
+</StackLayout>
+
+<ListView.DataView>
+    <DataGrid>
+    <DataItem itemSource="{Binding MenuItems}"
+    <d:X:Array=x:String>
+        <X:Array string page1>
+        </X:Array>
+    </DataItem>
+    </DataGrid>
+    <ListView.ColumnDefinitions>
+<ColumnDefinition Width="10"></ColumnDefinition>
+<ColumnDefinition Width="*"></ColumnDefinition>
+<ColumnDefinition Width="10"></ColumnDefinition>
+</ListView.ColumnDefinitions>
+<ListView.RowDefinitions>
+    <RowDefinition Height="30"></RowDefinition>
+    <RowDefinition Height="30"></RowDefinition>
+    <RowDefinition Height="30"></RowDefinition>
+
+    <RowDefinition Height="30"></RowDefinition>
+
+</ListView.RowDefinitions>
+</ListView.DataView>
+
+
+
+
+</ListView>
+
+</ContentPage>

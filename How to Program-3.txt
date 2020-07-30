@@ -1,0 +1,24 @@
+How to Program-3
+
+Problems
+1.Overwhelmed, to much at once, reslults in only "GIST" being remember.
+2. GIST =some syntax, CONCEPT
+3. Devil is in the details, no details no machine.
+4. Must test yourself [code yourself the project by hand; limited auto-complete]
+5. ITS JUST a script.
+6. 
+
+SOLUTION
+1. MINDSTATE [CONCPET WHAT AM I DOING]
+2. BAKE A CAKE [SCRIPT, LINE BY LINE, A PLAY IN EACH FILE]
+3. FORCE YOURSELF TO RECREATE [TEST, LINE BY LINE, JUST THIS]
+4. CONTROL YOUR EXPECTATIONS. THIS IS THE WAY. LET SATISFACTION COME FROM MASTERY, NOT QUANTITY. I CAN DO <INSERT SKILL 
+5. VISIBILE STRUCTURE TO THE CODE, ORDER TO HELP COMMIT TO ASSOCIATIONS, FLOW
+6. API'S, RTFM, PARAMETERS, FUNCTIONS PURPOSES
+7. WHAT I KNOW, WHAT I KNOW I DON'T KNOW, WHAT I FEEL, ITS OK TO BE WRONG; ITS NOT OK TO STAY STILL
+8. Remember how you beat your own mind, body; anxiety through that nap. It's possible. Master yourself, your mind, body and 
+	live from your soul.
+9. Don't be afraid, strike, commit.
+10. get into the ring from time to time, and just code. this is the true nature of programming, not just learning and practicing, to flow
+11. know what datatypes your logic is returning, null is not ===0, remember. know what your NUGET library functions are actually doing, returning save yourself some time asshole
+12. Angles, Devil in the details. Go over the turotial step by step again till you are certain. If you still fail, try another tutorial, angles.

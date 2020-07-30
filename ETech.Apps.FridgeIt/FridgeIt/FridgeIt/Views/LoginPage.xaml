@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="FridgeIt.Views.LoginPage"
+             ControlTemplate="{StaticResource TemplateHeaderFooter}">
+    <StackLayout>
+        <Entry x:Name="EntryUserEmail" Placeholder="Email" Keyboard="Text" Text="{Binding UserEmail}"></Entry>
+        <Entry x:Name="EntryUserPassword" Placeholder="Password" Keyboard="Text" Text="{Binding UserPassword}"></Entry>
+        <Button x:Name="ButtonLogin" Text="Log In" Command="{Binding CommandButtonLogin}"></Button>
+        <Grid>
+            <Label x:Name="LabelSwitch" Text="Keep Me Logged In" TextColor="Green"></Label>
+
+            <Switch  x:Name="SwitchKeepMeLoggedIn" IsToggled="{Binding SwitchToggle}"></Switch>
+
+        </Grid>
+        <Label x:Name="LabelRegistrationFailed" TextColor="Red" Text="{Binding LabelLoginFailed}" IsVisible="{Binding LabelLoginFailedIsVisible}" >
+            
+        </Label>
+
+        <Label x:Name="LabelRegister" Text="Register" TextColor="Black"  >
+            
+        </Label>
+    </StackLayout>
+
+
+</ContentPage>

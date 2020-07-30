@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ggWNPZrI+D7NxIfOSSDzci6rHkJ+b1mp61jBeM6aOqxVEQ1exlj4zIy0cvY6L/pdZxbu/dXfWw3sWyIPr9rlqA==",
+  "dgSpecHash": "fFxxIi38zQXOssrVfSW+mk+LPGgmVB3nNhJNfBwj903eQIe+BdsdEYsx1e0IiHp3AwSTE84qik3QnxafiYzhFA==",
   "success": true,
   "projectFilePath": "C:\\Users\\rouni\\Desktop\\FridgeApp\\ETech.Apps.FridgeIt\\FridgeIt\\FridgeIt\\FridgeIt.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,7 @@
     "C:\\Users\\rouni\\.nuget\\packages\\microcharts.forms\\0.9.1\\microcharts.forms.0.9.1.nupkg.sha512",
     "C:\\Users\\rouni\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\rouni\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\rouni\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Users\\rouni\\.nuget\\packages\\skiasharp\\2.80.1\\skiasharp.2.80.1.nupkg.sha512",
     "C:\\Users\\rouni\\.nuget\\packages\\skiasharp.views.forms\\2.80.1\\skiasharp.views.forms.2.80.1.nupkg.sha512",
     "C:\\Users\\rouni\\.nuget\\packages\\sqlite-net-pcl\\1.7.335\\sqlite-net-pcl.1.7.335.nupkg.sha512",

@@ -1,6 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Net.Http;
+using System.Runtime.CompilerServices;
 using System.Text;
+
+using Newtonsoft.Json;
 
 
 namespace FridgeIt.Models
@@ -48,6 +52,20 @@ namespace FridgeIt.Models
      
         #endregion
         #region Functions
+
+        private async void GetProducts(string upc)
+        {
+            string request = "https://api.edamam.com/api/food-database/v2/parser";
+            string _app_id = "42ae87cc";
+            string _api_key = "4c06cc5449a6a78761d88069d4d7c744";
+
+            //https://api.edamam.com/api/food-database/v2/parser?upc=078742369440&app_id=42ae87cc&app_key=4c06cc5449a6a78761d88069d4d7c744
+            string _completeRequest = $"{request}?upc={upc}&app_id={_app_id}&app_key={_api_key} ";
+
+            HttpClient client = new HttpClient();
+            var response= await client.GetStringAsync(_completeRequest);
+            var deserizliased=JsonConvert.DeserializeObject(response);
+        }
         #endregion
     }
 }

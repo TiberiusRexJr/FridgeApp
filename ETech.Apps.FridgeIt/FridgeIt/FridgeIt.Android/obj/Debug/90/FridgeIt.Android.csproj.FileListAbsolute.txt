@@ -547,3 +547,4 @@ C:\Users\rouni\Desktop\FridgeApp\ETech.Apps.FridgeIt\FridgeIt\FridgeIt.Android\o
 C:\Users\rouni\Desktop\FridgeApp\ETech.Apps.FridgeIt\FridgeIt\FridgeIt.Android\obj\Debug\90\android\src\crc648e35430423bd4943\SKGLTextureView.java
 C:\Users\rouni\Desktop\FridgeApp\ETech.Apps.FridgeIt\FridgeIt\FridgeIt.Android\obj\Debug\90\android\src\crc648e35430423bd4943\SKGLTextureViewRenderer.java
 C:\Users\rouni\Desktop\FridgeApp\ETech.Apps.FridgeIt\FridgeIt\FridgeIt.Android\obj\Debug\90\android\src\crc648e35430423bd4943\SKGLTextureView_InternalRenderer.java
+C:\Users\rouni\Desktop\FridgeApp\ETech.Apps.FridgeIt\FridgeIt\FridgeIt.Android\obj\Debug\90\android\assets\Newtonsoft.Json.dll

@@ -5,6 +5,8 @@ using System.Threading.Tasks;
 using RestSharp;
 using Newtonsoft.Json;
 using System.Collections.Generic;
+using System.Runtime.Serialization;
+using Newtonsoft.Json.Linq;
 
 namespace Json1
 {
@@ -40,9 +42,10 @@ namespace Json1
                         Task<string> responseData = responseContent.ReadAsStringAsync();
                         string data = responseData.Result;
                         Console.WriteLine(data);
+                        JObject o = JObject.Parse(data);
 
                         RestResponse restResponse = new RestResponse {StatusCode=statusCode,Content=responseData.Result};
-                        var objresponse = JsonConvert.DeserializeObject<List<Root>>(restResponse.Content);
+                        var json= JsonConvert.DeserializeObject<Root>(responseData.Result);
                         //List<Root> parasedResult = JsonConvert.DeserializeObject<List<Root>>(responseData.Result);//
                         //Console.WriteLine(parasedResult[0].ToString());//
 

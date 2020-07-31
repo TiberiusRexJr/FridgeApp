@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "q+agdVI44Xe1BZroZ+upwDdkBSbCCWAuPpnC8Z5ho7mIfIlK1PuRWzBhKqWbZ0SomwBcYPPWtYoxfsGRYrpfmA==",
+  "dgSpecHash": "RgyyjFTrC47+xabOiEFlinbYKOpiwuh1kqN3UEt3LU4TQztrdwVPGyYBdgf5EhMp8IAqOW4Iul985gF8B28MEQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\rouni\\Desktop\\FridgeApp\\ETech.Apps.FridgeIt\\FridgeIt\\FridgeIt.Android\\FridgeIt.Android.csproj",
+  "projectFilePath": "C:\\Users\\rouni\\Documents\\FridgeIt\\ETech.Apps.FridgeIt\\FridgeIt\\FridgeIt.Android\\FridgeIt.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\rouni\\.nuget\\packages\\fastandroidcamera\\2.0.0\\fastandroidcamera.2.0.0.nupkg.sha512",
     "C:\\Users\\rouni\\.nuget\\packages\\microcharts\\0.9.0\\microcharts.0.9.0.nupkg.sha512",

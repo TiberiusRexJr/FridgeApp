@@ -42,7 +42,6 @@ namespace Json1
                         Console.WriteLine(data);
 
                         RestResponse restResponse = new RestResponse {StatusCode=statusCode,Content=responseData.Result};
-                        var objresponse = JsonConvert.DeserializeObject<List<Root>>(restResponse.Content);
                         //List<Root> parasedResult = JsonConvert.DeserializeObject<List<Root>>(responseData.Result);//
                         //Console.WriteLine(parasedResult[0].ToString());//
 

@@ -1,13 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "RgyyjFTrC47+xabOiEFlinbYKOpiwuh1kqN3UEt3LU4TQztrdwVPGyYBdgf5EhMp8IAqOW4Iul985gF8B28MEQ==",
+  "dgSpecHash": "tVi2GSvLMetJUDjRW0CoH+OPSotxHRh9N5BgfUjsxCyeKWAAgi77fKJQKaqM5nexpWvCVPecMYnD3vgEvzew6g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\rouni\\Documents\\FridgeIt\\ETech.Apps.FridgeIt\\FridgeIt\\FridgeIt.Android\\FridgeIt.Android.csproj",
+  "projectFilePath": "C:\\Users\\rouni\\Desktop\\FridgeApp\\ETech.Apps.FridgeIt\\FridgeIt\\FridgeIt.Android\\FridgeIt.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\rouni\\.nuget\\packages\\fastandroidcamera\\2.0.0\\fastandroidcamera.2.0.0.nupkg.sha512",
     "C:\\Users\\rouni\\.nuget\\packages\\microcharts\\0.9.0\\microcharts.0.9.0.nupkg.sha512",
     "C:\\Users\\rouni\\.nuget\\packages\\microcharts.forms\\0.9.1\\microcharts.forms.0.9.1.nupkg.sha512",
     "C:\\Users\\rouni\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\rouni\\.nuget\\packages\\restsharp\\106.11.4\\restsharp.106.11.4.nupkg.sha512",
     "C:\\Users\\rouni\\.nuget\\packages\\skiasharp\\2.80.1\\skiasharp.2.80.1.nupkg.sha512",
     "C:\\Users\\rouni\\.nuget\\packages\\skiasharp.views\\2.80.1\\skiasharp.views.2.80.1.nupkg.sha512",
     "C:\\Users\\rouni\\.nuget\\packages\\skiasharp.views.forms\\2.80.1\\skiasharp.views.forms.2.80.1.nupkg.sha512",

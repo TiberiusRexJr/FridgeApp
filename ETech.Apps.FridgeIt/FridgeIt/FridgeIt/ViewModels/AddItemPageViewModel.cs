@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Runtime.InteropServices.ComTypes;
 using System.Text;
+using System.Windows.Input;
 using Xamarin.Forms;
 using ZXing;
 using ZXing.Mobile;
@@ -13,11 +14,11 @@ namespace FridgeIt.ViewModels
     {
         #region Variables
         public Command commandScanButtonClicked;
+        public ICommand AddByUPC;
         string labelUPC;
         ZXingScannerPage scanPage;
         #endregion
         #region Properties
-        #endregion
         public Command CommandScanButtonClicked
         {
             get { return commandScanButtonClicked; }
@@ -31,7 +32,9 @@ namespace FridgeIt.ViewModels
             get { return labelUPC; }
             set { labelUPC = value; }
         }
-        
+        #endregion
+
+
         #region Implementations
         #endregion
         #region Constructor

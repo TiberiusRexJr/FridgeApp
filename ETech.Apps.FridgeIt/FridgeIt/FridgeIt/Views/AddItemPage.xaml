@@ -9,7 +9,7 @@
     <ContentPage.Content>
         <FlexLayout>
             
-            <Button Text="Scan" x:Name="btnScan" ></Button>
+            <Button Text="Scan" x:Name="btnScan"Command="{Binding Path=AddByUPC}"></Button>
             <Label Text="{Binding LabelUPC}"  TextColor="Coral"></Label>          
         </FlexLayout>
     </ContentPage.Content>

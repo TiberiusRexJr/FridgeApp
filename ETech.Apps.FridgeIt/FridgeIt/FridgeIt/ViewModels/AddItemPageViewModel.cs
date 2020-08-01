@@ -7,26 +7,23 @@ using Xamarin.Forms;
 using ZXing;
 using ZXing.Mobile;
 using ZXing.Net.Mobile.Forms;
+/*COMMAND FUCKING DELEGATION NIGGA FUCK YOU KEEP YOUR HANDS UP DAWG*/
 
 namespace FridgeIt.ViewModels
 {
     class AddItemPageViewModel : ContentPage
     {
         #region Variables
-        public Command commandScanButtonClicked;
+       /* delegate void mathamatics(int x, int y);
+        delegate int math2(int x);
+        delegate int math3(int x, int y);
+        delegate void math4(int x, int y);*/
         public ICommand AddByUPC;
         string labelUPC;
         ZXingScannerPage scanPage;
         #endregion
         #region Properties
-        public Command CommandScanButtonClicked
-        {
-            get { return commandScanButtonClicked; }
-            set
-            {
-                commandScanButtonClicked = value;
-            }
-        }
+     
         public string LabelUPC
         {
             get { return labelUPC; }
@@ -38,15 +35,40 @@ namespace FridgeIt.ViewModels
         #region Implementations
         #endregion
         #region Constructor
-        /*AddItemPageViewModel()
+        AddItemPageViewModel()
      {
-         CommandScanButtonClicked = new Command(Button_Scan_Clicked);
-     }*/
+            /*mathamatics math1 = new mathamatics(Add);
+            math1 = Subtract;
+            math1(1, 32);
+            math1 += Add;*/
+
+            /*mathamatics mathamatics = new mathamatics(Add);
+            mathamatics += Subtract;
+             math2 math2 = x => (x * x);
+*/
+            /*math3 FunkPatrol = (x, y) => (x * x * y * y);
+            FunkPatrol(3, 4);*/
+
+            /*          math4 math4 = (x, y) =>
+                      {
+                          Console.WriteLine(x + y);
+                      };
+                      math4(3, 4);
+            */
+        }
 
 
         #endregion
         #region Functions
 
+        public void Add(int x, int y)
+        {
+            throw new NotImplementedException();
+        }
+        public void Subtract(int x, int y)
+        {
+            throw new NotImplementedException();
+        }
         /* private async void Button_Scan_Clicked(object sender)
          {
 
